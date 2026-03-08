@@ -9,7 +9,7 @@ Portable mental model system. Tracks user preferences, communication style, beha
 
 ## Skills
 
-Four skills in `skills/` implement the ToME protocol:
+Five skills implement the ToME protocol:
 
 | Skill | When |
 |-------|------|
@@ -17,6 +17,7 @@ Four skills in `skills/` implement the ToME protocol:
 | `/tome-observe` | After significant exchanges — captures learning signals to journal |
 | `/tome-adapt` | Before complex responses — consults mental model to adapt style |
 | `/tome-review` | Weekly/monthly — extracts patterns, validates predictions, prunes stale beliefs |
+| `/tome-sync` | Pull from GitHub at session start; push after observations or at session end |
 
 ## Environment Setup
 
@@ -43,6 +44,23 @@ cp -r ~/tome/skills/* ~/.claude/skills/
 # Or for a specific project:
 cp -r ~/tome/skills/* .claude/skills/
 ```
+
+### Cowork (Mounted Folder Setup)
+
+ToME data is mounted at: `/sessions/trusting-wonderful-darwin/mnt/tome`  
+Git PAT stored at: `/sessions/trusting-wonderful-darwin/mnt/tome/.git-pat`  
+Git working dir (ephemeral): `/tmp/tome-ai`
+
+**Start of every Cowork session:**
+1. Run `/tome-sync` (pull mode) — clones repo to /tmp, merges remote changes, syncs to mounted folder
+2. Run `/init-tome` — loads mental model and today's journal, activates ToME behavior
+
+**During session:**
+- `/tome-adapt` before complex responses
+- `/tome-observe` after significant exchanges (also syncs changes to mounted folder)
+
+**End of session / periodically:**
+- Run `/tome-sync` (push mode) — commits and pushes changes to GitHub
 
 ### NanoClaw
 
