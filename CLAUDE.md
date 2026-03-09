@@ -2,6 +2,17 @@
 
 Portable mental model system. Tracks user preferences, communication style, behavioral patterns, and goals across AI environments.
 
+## Session Start (Cowork) — Always Do This First
+
+At the start of every Cowork session, before doing anything else:
+
+1. Run `/tome-sync` (pull) — syncs latest data from GitHub
+2. Run `/init-tome` — loads mental model and today's journal, activates ToME behavior
+
+At the end of every session (or after significant observations):
+
+3. Run `/tome-sync` (push) — commits and pushes changes back to GitHub
+
 ## Data
 
 - Mental model: `mental-model.md`
