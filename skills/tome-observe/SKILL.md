@@ -137,12 +137,26 @@ After writing the journal and updating the mental model, reconcile predictions b
 
 3. **Check for orphans** — If a mental model belief has no supporting evidence trail (no journal entry, no prediction history), flag it for review. Beliefs should be traceable.
 
-### 6. Summary
+### 6. Sync to Git
+
+After writing changes, commit and push so the mental model stays in sync across devices:
+
+```bash
+cd /workspace/global/tome
+git add -A
+git diff --cached --quiet || git commit -m "tome: observe $(date +%Y-%m-%d) — [brief topic]"
+git push origin main 2>/dev/null || echo "Push failed (offline or no remote) — will sync later"
+```
+
+If the push fails, that's fine — changes are saved locally and will be pushed next time. Do not let a push failure block the rest of the session.
+
+### 7. Summary
 
 Briefly note:
 - Number of signals captured
 - Whether the mental model was updated
 - Any new predictions to test
+- Whether changes were pushed to git
 
 ## Guidelines
 
