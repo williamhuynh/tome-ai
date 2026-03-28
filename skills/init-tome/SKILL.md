@@ -28,10 +28,37 @@ If the ToME directory is a git repo, pull the latest before reading:
 
 ```bash
 cd <tome-directory>
-git pull --ff-only origin main 2>/dev/null || true
+git fetch origin main 2>/dev/null
+git merge --ff-only origin/main 2>/dev/null
 ```
 
-If the pull fails (offline, no remote, conflict), proceed silently with the local copy.
+**If the fast-forward merge fails** (local and remote have diverged), resolve it with an LLM merge:
+
+1. Read both versions of `mental-model.md`:
+   ```bash
+   # Local version (your current file)
+   cat mental-model.md
+   # Remote version
+   git show origin/main:mental-model.md
+   ```
+
+2. Merge them intelligently:
+   - Combine observations from both — don't drop either side's additions
+   - For confidence levels, take the higher value (more data = more confidence)
+   - For goals, prefer the more recently dated version
+   - Deduplicate hypotheses and learning events
+   - Journal entries never conflict (different filenames), just ensure both sets exist
+
+3. **Safety check before writing:** Compare the merged result to the local version. If more than 30% of the content would change, **stop and tell the user** — large divergences likely indicate a problem, not a normal merge. Show both versions and ask how to proceed.
+
+4. If the merge is within the safety threshold, write the merged `mental-model.md`, then:
+   ```bash
+   git add -A
+   git commit -m "tome: auto-merge diverged mental models $(date +%Y-%m-%d)"
+   git push origin main 2>/dev/null || true
+   ```
+
+**If fetch fails** (offline, no remote), proceed silently with the local copy.
 
 ### 2. Load Mental Model
 
