@@ -9,22 +9,47 @@ Systematic review and maintenance of the mental model. Keeps it current and accu
 
 ## When to Invoke
 
-- Weekly (Sunday evening or Monday morning)
+- Weekly (scheduled Sunday evening)
 - Monthly (first of each month)
 - On user request ("review what you've learned about me")
 - After a major correction or shift in priorities
 
 ## Process
 
-### 1. Gather Data
+### 1. Data Sufficiency Gate
 
-Read all recent journal entries from the `journal/` subdirectory.
+Before doing any review work, check if there's enough new data:
+
+```bash
+cd /workspace/global/tome
+
+# Find the last review date from the mental model
+LAST_UPDATED=$(head -5 mental-model.md | grep -oP '\d{4}-\d{2}-\d{2}' | head -1)
+echo "Last updated: $LAST_UPDATED"
+
+# Count journal entries since last review
+NEW_ENTRIES=$(find journal/ -name '*.md' -newer mental-model.md 2>/dev/null | wc -l)
+NEW_LINES=$(find journal/ -name '*.md' -newer mental-model.md -exec cat {} + 2>/dev/null | wc -l)
+echo "New entries: $NEW_ENTRIES, New lines: $NEW_LINES"
+```
+
+**Skip the review if:**
+- Fewer than 2 new journal entries since the last mental model update, AND
+- Fewer than 50 lines of new observations
+
+If skipping, just note "Insufficient new data for review — skipping" and exit. Do not produce an empty or repetitive review.
+
+If this was triggered by user request, always proceed regardless of data sufficiency.
+
+### 2. Gather Data
+
+Read all journal entries since the last review from the `journal/` subdirectory.
 
 For weekly reviews, focus on last 7 days. For monthly, last 30.
 
 Read the current mental model.
 
-### 2. Extract Patterns
+### 3. Extract Patterns
 
 Analyze journal entries for:
 
@@ -53,7 +78,7 @@ Analyze journal entries for:
 - New areas of exploration?
 - Action: Update knowledge state
 
-### 3. Validate Predictions
+### 4. Validate Predictions
 
 Review all predictions in journal entries AND the mental model's "Active Hypotheses" section.
 
@@ -72,7 +97,7 @@ Review all predictions in journal entries AND the mental model's "Active Hypothe
 - How you'd validate it (specific scenario or test)
 - Starting confidence level
 
-### 4. Calibrate Confidence
+### 5. Calibrate Confidence
 
 Check prediction accuracy:
 - High-confidence predictions (80-100%) — were they right 80-100% of the time?
@@ -83,7 +108,7 @@ If miscalibrated:
 - Overconfident → lower confidence thresholds
 - Underconfident → raise confidence thresholds
 
-### 5. Prune Mental Model
+### 6. Prune Mental Model
 
 - **Completed goals** → remove from current, optionally note in journal
 - **Invalidated beliefs** → remove, document why in journal
@@ -92,17 +117,8 @@ If miscalibrated:
 
 The mental model should reflect the CURRENT state. History lives in the journal.
 
-### 6. Draft or Apply Changes
+### 7. Apply Changes
 
-**Draft mode (default when automated / cron):**
-Write proposed changes to `tome/review-draft.md` instead of modifying the mental model directly. Include:
-- What would change and why
-- Supporting evidence (journal references)
-- Confidence level for each proposed change
-
-Only apply changes that meet a **high confidence bar** (3+ consistent signals across sessions). Everything else goes in the draft for the user to review.
-
-**Direct mode (when user explicitly requests):**
 Apply all findings directly to the mental model:
 1. Update current goals
 2. Adjust values confidence levels
@@ -113,10 +129,21 @@ Apply all findings directly to the mental model:
 
 If no meaningful changes are warranted, do nothing. Don't update for the sake of updating.
 
-### 7. Summary
+### 8. Sync to Git
+
+After applying changes, commit and push:
+
+```bash
+cd /workspace/global/tome
+git add -A
+git diff --cached --quiet || git commit -m "tome: review $(date +%Y-%m-%d)"
+git push origin main 2>/dev/null || echo "Push failed (offline or no remote) — will sync later"
+```
+
+### 9. Summary
 
 Report to user:
-- Key updates made (or proposed in draft)
+- Key updates made
 - Patterns extracted
 - Predictions validated/invalidated
 - Gaps still to explore
