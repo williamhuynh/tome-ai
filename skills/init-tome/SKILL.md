@@ -10,13 +10,21 @@ Session primer. Load the mental model into context and activate ToME behavior fo
 ## When to Invoke
 
 - At the start of every session
-- When CLAUDE.md says to use `/init-tome`
+- When CLAUDE.md or agent config says to use `/init-tome`
+
+## Prerequisites
+
+The host environment (CLAUDE.md, agent.md, etc.) must specify the ToME directory path. The directory should contain:
+
+- `mental-model.md` — the core mental model
+- `journal/` — daily observation entries (YYYY-MM-DD.md)
+- `.git/` — optional, enables auto-sync across devices
 
 ## Process
 
 ### 1. Load Mental Model
 
-Read the mental model file from the ToME directory configured in CLAUDE.md.
+Read `mental-model.md` from the ToME directory.
 
 Review:
 - Current goals (what is the user working on?)
