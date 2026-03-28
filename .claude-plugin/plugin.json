@@ -1,0 +1,13 @@
+{
+  "name": "tome",
+  "version": "1.0.0",
+  "description": "Theory of Mind Expanded (ToME) — a structured mental model system that helps AI assistants understand and predict user preferences, communication style, and decision patterns.",
+  "author": {
+    "name": "Will Huynh",
+    "url": "https://github.com/williamhuynh"
+  },
+  "repository": "https://github.com/williamhuynh/tome-ai",
+  "license": "MIT",
+  "keywords": ["theory-of-mind", "mental-model", "personalization", "memory"],
+  "skills": "./skills/"
+}

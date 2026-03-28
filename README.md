@@ -15,12 +15,13 @@ Understanding a user isn't about guessing. ToME treats it as a falsifiable, test
 
 ```
 tome/
+├── .claude-plugin/    # Claude Code plugin manifest
+├── skills/            # ToME skills (init, observe, adapt, review, setup)
 ├── mental-model.md    # The living mental model
-├── journal/           # Session observation logs
-│   ├── 2026-03-09.md
-│   ├── 2026-03-13.md
-│   └── ...
-└── review-draft.md    # Weekly automated review
+└── journal/           # Session observation logs
+    ├── 2026-03-09.md
+    ├── 2026-03-13.md
+    └── ...
 ```
 
 ### Mental Model
@@ -48,15 +49,16 @@ Date-stamped session logs that capture:
 - **Patterns** — meta-level observations about how the user works
 - **Predictions** — new hypotheses or confidence updates on existing ones
 
-### Weekly Review
+### Periodic Review
 
-Automated review that surfaces:
+The review skill (scheduled or manual) surfaces:
 
-- Unapplied recommendations from previous reviews
 - Stale hypotheses (no new signals in 2+ weeks)
 - Prediction windows nearing expiry
 - Confidence calibration checks
 - Journal gaps
+
+Changes are applied directly to the mental model when confidence is high enough.
 
 ## How Agents Use ToME
 
@@ -66,10 +68,56 @@ Automated review that surfaces:
 4. **Fact-checking discipline** — soften unverified claims when the user is known to verify
 5. **Approval disambiguation** — check session context rather than assuming recency
 
-## Integration
+## Installation
 
-ToME is designed to be mounted into AI agent containers as a read-write volume. Agents observe interactions and update the model through structured skills (observe, adapt, review).
+### Claude Code Plugin
+
+Install as a Claude Code plugin for use across CLI, Desktop, and Cowork:
+
+```bash
+/plugin install tome@<marketplace>
+```
+
+Or during development, point Claude Code at the repo directly:
+
+```bash
+claude --plugin-dir ~/tome
+```
+
+Then run `/tome:setup` to create your data directory and configure your project.
+
+### Skills
+
+Once installed, these skills are available:
+
+| Skill | Purpose |
+|-------|---------|
+| `/tome:setup` | First-time setup — creates data directory, initializes mental model |
+| `/tome:init-tome` | Start of every session — loads mental model, activates ToME behavior |
+| `/tome:tome-observe` | After significant exchanges — captures learning signals to journal |
+| `/tome:tome-adapt` | Before complex responses — consults mental model to adapt style |
+| `/tome:tome-review` | Fortnightly/monthly — extracts patterns, validates predictions, prunes stale beliefs |
+
+### NanoClaw
+
+If using NanoClaw, run `/add-tome` instead. It handles container mounts, skill syncing, and CLAUDE.md configuration automatically.
+
+### Other Agent Harnesses
+
+1. Clone this repo to a local directory (e.g. `~/tome`)
+2. Copy `skills/` into your agent's skill directory
+3. Add to your agent config (CLAUDE.md, agent.md, etc.):
+
+```markdown
+## ToME
+ToME data is at <path-to-tome-directory>.
+Always run `/init-tome` at the start of every session.
+```
+
+## Git Sync
+
+ToME data is a git repo. The observe and review skills auto-commit and push after each run, keeping the mental model in sync across devices. Pull on other machines to get the latest.
 
 ## License
 
-Private repository. All contents are personal mental model data.
+MIT
