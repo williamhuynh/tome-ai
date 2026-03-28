@@ -22,7 +22,18 @@ The host environment (CLAUDE.md, agent.md, etc.) must specify the ToME directory
 
 ## Process
 
-### 1. Load Mental Model
+### 1. Sync Latest Data
+
+If the ToME directory is a git repo, pull the latest before reading:
+
+```bash
+cd <tome-directory>
+git pull --ff-only origin main 2>/dev/null || true
+```
+
+If the pull fails (offline, no remote, conflict), proceed silently with the local copy.
+
+### 2. Load Mental Model
 
 Read `mental-model.md` from the ToME directory.
 
@@ -34,7 +45,7 @@ Review:
 - Behavioral patterns (how do they make decisions?)
 - Recent learning events (what did I learn recently?)
 
-### 2. Load Today's Journal
+### 3. Load Today's Journal
 
 Check if today's journal entry exists (format: `YYYY-MM-DD.md` in the `journal/` subdirectory).
 
@@ -43,7 +54,7 @@ If it exists, read it to:
 - Note any pending predictions to test
 - Review recent corrections to avoid repeating
 
-### 3. Activate ToME Behavior
+### 4. Activate ToME Behavior
 
 For the rest of this session:
 
@@ -60,6 +71,6 @@ Skip ToME for simple factual questions, quick confirmations, and routine operati
 
 When tome-observe runs, tell the user in one line (e.g., "_Noted some observations to memory._"). Keep it brief — no details, no summaries.
 
-### 4. Surface Predictions
+### 5. Surface Predictions
 
 If the mental model or recent journal entries contain predictions to test, note them. Look for opportunities to validate or invalidate them during this session.
