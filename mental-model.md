@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-03-28*
+*Last Updated: 2026-03-29*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -99,7 +99,11 @@
   - Operational / informational → direct implication ("Organisations need a solid grasp of their current AI exposure now.")
   - Don't default to rhetorical questions on every post
 - **Cut the scaffolding**: Don't spell out the assumption before the implication — trust the evidence paragraphs to carry it. Will removes setup paragraphs that over-explain the point.
-- **Pivot conjunctions** (Confidence: 85% — confirmed in 2 consecutive posts): Will uses "But" to signal turns — "But neither was designed..." / "But it fits less well..." — not just "Neither was designed..."
+- **Name the effect, not the mechanism** (Confidence: 85% — confirmed 2026-03-29): Will cuts explanations of how/why. "A higher level of intensity on top of the work itself" vs. "deciding what to hand off, what to keep, when to step back in." Readers don't need the mechanism spelled out.
+- **Colloquial word choice** (Confidence: 80%): Natural speech patterns over structured phrasing. "paralleling more work" (Will) vs. "handling more work streams" (Sky). Less framework, more human.
+- **No hashtags** (Confidence: 90% — stripped from published post 2026-03-29): Don't include hashtags by default in drafts.
+- **Pivot conjunctions** (Confidence: 90% — confirmed in 3 posts): Will uses "But" to signal turns — "But neither was designed..." / "But it fits less well..." / "But so is the fatigue." — not just "Neither was designed..."
+- **Rhetorical question as mid-post pivot** (Confidence: 80%): Not just for endings — Will uses rhetorical questions to turn personal → reader/team angle. Replaces explanation paragraphs. "And as we begin to expect our teams to also use AI — what impact would this lead to?"
 
 ### LinkedIn Correction History
 - Rejected: D&D puzzle angle — "too random"
@@ -259,9 +263,9 @@
 - Validate: observe preference when given the choice
 
 ### H12: Will's published posts average ~130-155 words (not 200+)
-- Source: HITL post (~155 words), Post A (~130 words) — 2 confirming data points
-- Confidence: 80% | Status: Testing (2 data points)
-- Validate: measure word count of next 3 published posts Will shares
+- Source: HITL post (~155 words), Post A (~130 words), AI productivity post (~150 words) — 3 confirming data points
+- Confidence: 90% | Status: Strong pattern — promote to belief on next confirmation
+- Validate: measure word count of next 2 published posts Will shares
 
 ### H15: Will's hooks include "we have reviewed/seen" credibility anchor when making empirical claims
 - Source: Post B hook ("frameworks we have reviewed"), Post B body ("frameworks we have seen"), earlier posts ("working with organisations that...")
@@ -273,6 +277,11 @@
 - Source: HITL (hot take → rhetorical question kept), Post A (operational → direct implication substituted)
 - Confidence: 65% | Status: Testing (1 data point each)
 - Validate: observe next 4 published posts across both types
+
+### H16: Will never includes hashtags in published LinkedIn posts
+- Source: AI productivity post 2026-03-29 — hashtags included in draft, stripped in final
+- Confidence: 70% | Status: Testing (1 data point)
+- Validate: check next 4 published posts Will shares for presence/absence of hashtags
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
