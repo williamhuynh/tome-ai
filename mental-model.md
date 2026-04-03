@@ -1,16 +1,11 @@
 # Mental Model
 
-*Last Updated: 2026-03-29*
+*Last Updated: 2026-04-03*
 *Coverage: 2026-02-23 → present*
 
 ---
 
 ## Current Goals
-
-### Immediate (This Week)
-- **Implement ToME system in NanoClaw** (Confidence: 95%)
-  - Framework + implementation plan created; skills operational
-  - Next: ongoing observation and model refinement
 
 ### Short-term (This Month)
 - **Consistent LinkedIn presence** (Confidence: 90%)
@@ -28,6 +23,8 @@
 ### Long-term (This Quarter)
 - **Portable AI interaction quality improvement** (Confidence: 85%)
   - ToME as reusable plugin beyond NanoClaw
+- **Refine ToME mental model quality** (ongoing)
+  - Observation, weekly reviews, and model calibration
 
 ---
 
@@ -47,7 +44,7 @@
    - Quote: "I typically will be happier if it took a moment longer to think or verify"
    - Quote: "Sometimes you jump the gun too much"
    - Manifestation: Fact-checks before using information (caught Claude Code timing error today)
-   - Implication: Verify claims. Soften unverified timing to trend language.
+   - Implication: Verify claims. Soften unverified timing to trend language. Stating "checking vs. guessing" is welcomed.
 
 2. **Signal-to-Noise Ratio** (Confidence: 95%)
    - Definition: "Saying the right things or the right amount of things"
@@ -88,8 +85,9 @@
   - Also hedges absolutes: "most" → "most if not all" when based on real but limited sample
 - **Factual claims**: Must be verifiable. Soften timing claims to "increasingly", "recently" if unsure.
 - **Process**: Happy with more recursive internal loops before post reaches him (Confidence: 85%)
-- **Target length**: ~150 words in final form, not 200+ (Confidence: 80% — from published HITL post)
-  - Will edits DOWN. Don't pad to fill range. Lean toward 150.
+- **Target word count for LinkedIn posts**: 130–155 words in published form (Confidence: 92%)
+  - Will consistently edits drafts down to this range. Don't pad to fill longer targets.
+  - Lean toward 150. Will edits DOWN, not up.
 - **Post structure** (confirmed from HITL final version): Hook → nuance acknowledgment → evidence → tension as question → rhetorical punchline
   - NOT: Hook → assertions → more assertions → explicit CTA
 - **Nuance-before-provocation** (Confidence: 80%): Will adds a fairness line before escalating ("But it's often thrown into the conversation without true consideration"). Establishes credibility, makes the hot take land harder.
@@ -232,24 +230,14 @@
 
 ## Active Hypotheses
 
-### H5: Prefers verification pauses over speed
-- Confidence: 90% | Status: Testing
-- Validate: explicitly state "checking vs guessing" and observe reaction
-
 ### H7: LinkedIn posts with specific data/evidence perform better
 - Confidence: 80% | Status: Testing (2nd confirming signal)
 - Evidence: Gen Z labor market post (14% stat, 83% Gen Z stat, MIT/Stanford) → "I really like this" — strongest approval language observed
 - Validate: track approval language across next 5 posts, compare data-heavy vs. insight-only
 
-### H8: Will stays in conceptual mode longer than expected
-- Confidence: 80% | Status: Testing
+### H8: Will spends multiple exchanges in conceptual exploration before signalling readiness for implementation
+- Confidence: 70% | Status: Testing (stale — no new evidence since early March)
 - Validate: observe engagement length before he signals implementation
-
-### H9: "The real issue is..." structure matches Will's voice
-- Confidence: 65% | Status: Mixed signal — downgraded
-- Evidence against: Will flagged "the real question is" (Ethan Mollick list) as a banned AI cliché and requested it be removed from the LinkedIn skill template. "The real issue is..." removed from post structure as part of that update.
-- Evidence for: No direct rejection of a published post using this structure yet
-- Validate: track whether Will flags this framing if it appears in a future draft
 
 ### H10: Opportunity framing outperforms warning framing across all LinkedIn content
 - Source: 2026-03-09 session (2nd confirming signal: Gen Z post)
@@ -261,11 +249,6 @@
 - Source: "happy for the skill to do more recursive loops before it comes to me"
 - Confidence: 85% | Status: Testing
 - Validate: observe preference when given the choice
-
-### H12: Will's published posts average ~130-155 words (not 200+)
-- Source: HITL post (~155 words), Post A (~130 words), AI productivity post (~150 words) — 3 confirming data points
-- Confidence: 90% | Status: Strong pattern — promote to belief on next confirmation
-- Validate: measure word count of next 2 published posts Will shares
 
 ### H15: Will's hooks include "we have reviewed/seen" credibility anchor when making empirical claims
 - Source: Post B hook ("frameworks we have reviewed"), Post B body ("frameworks we have seen"), earlier posts ("working with organisations that...")
@@ -296,4 +279,7 @@
 - **H2**: Concepts before implementation → Mode Patterns (95%)
 - **H3**: Analogies for stress-testing → Behavioral Patterns (90%)
 - **H4**: Smoothness = signal/noise → Values (95%)
+- **H5**: Prefers verification pauses over speed → merged into Accuracy Over Speed value (95%)
 - **H6**: Wants minimal triggers → Validated by full automation of LinkedIn + AI news
+- **H9**: "The real issue is..." structure matches Will's voice → Invalidated; phrase pattern flagged as AI cliché (Ethan Mollick list, 2026-03-12)
+- **H12**: LinkedIn posts average 130–155 words → Promoted to belief in Content Creation (92%)
