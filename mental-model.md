@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-05*
+*Last Updated: 2026-04-05 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -301,10 +301,21 @@
 - Confidence: 70% | Status: Testing (1 data point)
 - Validate: observe next feature that involves alerting the user
 
-### H20: Will proactively identifies long-term system hygiene issues before they manifest
+### H20: Will proactively identifies long-term system hygiene/coverage gaps before they manifest
 - Source: Worker containers session 2026-04-05 — raised folder accumulation, rm safety, result_content overwrite before they were problems
-- Confidence: 70% | Status: Testing (1 data point)
+- 2nd signal (2026-04-05 evening): Noticed tome-observe journal "isn't being updated much" — spotted coverage gap before it was flagged, across multiple agents
+- Confidence: 75% | Status: Testing (2 data points, same day — need cross-session confirmation)
 - Validate: observe next feature discussion for unprompted lifecycle/cleanup concerns
+
+### H21: Will prefers adaptive/inferred schemas over predefined rigid templates in knowledge systems
+- Source: Wiki design feedback 2026-04-05 — "too many specific MD files", "not all projects will have same content"
+- Confidence: 70% | Status: Testing (1 data point)
+- Validate: next time a schema/template is proposed, observe pushback on rigidity
+
+### H22: Will is security-conscious about secrets storage even in trusted/familiar contexts
+- Source: 2026-04-05 — questioned PAT-in-file approach explicitly after setting it up: "Is that a secure way to store secrets? Is that how it's done in nanoclaw?"
+- Confidence: 70% | Status: Testing (1 data point)
+- Validate: next secrets/credential discussion
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
