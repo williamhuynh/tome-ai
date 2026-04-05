@@ -296,6 +296,16 @@
 - Confidence: 80% | Status: Testing (2+ data points in one session)
 - Validate: observe if this pattern continues in non-NanoClaw contexts
 
+### H19: Will prefers notifications through existing channels (not new paths)
+- Source: Worker containers session 2026-04-05 — "I'm missing now its notification via sky"
+- Confidence: 70% | Status: Testing (1 data point)
+- Validate: observe next feature that involves alerting the user
+
+### H20: Will proactively identifies long-term system hygiene issues before they manifest
+- Source: Worker containers session 2026-04-05 — raised folder accumulation, rm safety, result_content overwrite before they were problems
+- Confidence: 70% | Status: Testing (1 data point)
+- Validate: observe next feature discussion for unprompted lifecycle/cleanup concerns
+
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
 - Confidence: 80% | Status: Testing
