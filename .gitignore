@@ -1,2 +1,3 @@
 # Keep gitkeep for empty journal dir on fresh clones
 !journal/.gitkeep
+secrets/
