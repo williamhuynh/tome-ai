@@ -107,18 +107,31 @@ If the mental model is mostly unpopulated (template defaults), you may populate 
 
 These will increase as subsequent sessions confirm or refine beliefs.
 
-#### Ongoing updates
+#### Ongoing updates — Two-Tier Decision
 
-For an already-populated mental model, only update if:
-- A belief changed (correction invalidated something)
-- A new high-confidence pattern emerged (3+ consistent signals across sessions)
-- A goal changed (user stated new priorities)
-- Knowledge state shifted (user demonstrated new expertise or started learning something)
+**Tier 1: Update the mental model NOW**
 
-Do NOT update for:
-- Single observations without pattern confirmation
-- Speculative inferences — only record what was directly stated or demonstrated, never "inferred from context"
+Act immediately for strong, unambiguous signals. Don't wait for the next review cycle.
+
+| Signal | Confidence | Action |
+|---|---|---|
+| Explicit correction ("that's wrong", "don't do X") | Start at 80% | Update belief NOW. If a contradicts an existing belief, flag the change inline. |
+| Explicit goal change ("I've shifted focus to…", "X is no longer a priority") | 85–90% | Update Goals section NOW. |
+| Direct contradiction of an existing belief | 80% | Update NOW. Note what changed and why in the belief entry. |
+| Hypothesis validated by 2+ sessions' worth of evidence | Promote to belief | Remove from Active Hypotheses, embed in the relevant section NOW. |
+
+When you make an immediate update, append **"→ Update applied [date]"** to the relevant journal entry so there's a traceable link between observation and model change.
+
+**Tier 2: Journal only — wait for the weekly review**
+
+Hold these back. Don't update the mental model yet.
+
+- Single observations without cross-session confirmation
+- Implicit patterns (inferred, not stated — gut feel, behavioural reads)
+- Soft approvals ("looks good", no explicit signal about the underlying pattern)
 - Minor variations in established patterns
+
+Do NOT update for speculative inferences — only record what was directly stated or demonstrated, never "inferred from context".
 
 #### Knowledge state rules
 
