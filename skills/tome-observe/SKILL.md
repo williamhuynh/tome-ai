@@ -156,9 +156,16 @@ After writing changes, commit and push so the mental model stays in sync across 
 
 ```bash
 cd /workspace/global/tome
+
+# Ensure remote uses HTTPS + PAT (works from all containers)
+PAT=$(cat /workspace/global/tome/secrets/github_pat.txt 2>/dev/null)
+if [ -n "$PAT" ]; then
+  git remote set-url origin "https://williamhuynh:${PAT}@github.com/williamhuynh/tome-ai.git"
+fi
+
 git add -A
 git diff --cached --quiet || git commit -m "tome: observe $(date +%Y-%m-%d) — [brief topic]"
-git push origin main 2>/dev/null || echo "Push failed (offline or no remote) — will sync later"
+git push origin main 2>&1 || echo "Push failed — changes saved locally, will sync later"
 ```
 
 If the push fails, that's fine — changes are saved locally and will be pushed next time. Do not let a push failure block the rest of the session.
