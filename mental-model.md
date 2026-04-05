@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-03*
+*Last Updated: 2026-04-05*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -19,6 +19,15 @@
 
 - **Daily AI news digest** (Confidence: 90%)
   - Fully operational; running at 7am AEDT
+
+- **AI-native todo system** (Confidence: 90%)
+  - Brain dump input, agent delegation, feedback loop — live in Mission Control
+  - Agents can create/update/complete todos via MCP tools
+  - Daily 8:30am digest cron running
+
+- **Personal knowledge management** (Confidence: 70%)
+  - Exploring LLM Wiki pattern (Karpathy) for per-project structured knowledge
+  - Thinking stage — not yet implemented
 
 ### Long-term (This Quarter)
 - **Portable AI interaction quality improvement** (Confidence: 85%)
@@ -160,6 +169,17 @@
 - Example: Anthropic labor market report → "young workers hired less but most AI-native — apprenticeship ladder concern"
 - Implication: when the argument is pre-formed, validate it first, then execute — don't reframe
 
+### Incremental Over Big-Bang (NEW — observed 2026-04-04)
+- Quote: "I will get there, I just want to take it in steps to minimise breakage"
+- Applies to: upgrades, migrations, architectural changes
+- Prefers stepping stones with verification at each step over all-at-once changes
+- Implication: break large changes into committable increments, verify between each
+
+### Documents Decisions as First-Class Artifacts (NEW — observed across session)
+- Repeatedly asked to update CUSTOMIZATIONS.md, create port maps, document the OneCLI decision
+- Values institutional memory — wants future agents/sessions to have context on WHY something was done
+- Implication: when making architectural decisions, document the reasoning, not just the code
+
 ### Mode Patterns
 - **Exploration → Summary/Confirmation → Implementation** (Confidence: 95%)
 - Wait for Will to signal transition — don't jump ahead
@@ -265,6 +285,16 @@
 - Source: AI productivity post 2026-03-29 — hashtags included in draft, stripped in final
 - Confidence: 70% | Status: Testing (1 data point)
 - Validate: check next 4 published posts Will shares for presence/absence of hashtags
+
+### H17: Will prefers to keep upstream alignment even at cost of extra merge work
+- Source: OneCLI decision 2026-04-04 — "My concern is if they keep making more changes that is dependant on onecli"
+- Confidence: 70% | Status: Testing
+- Validate: observe next upgrade or dependency decision
+
+### H18: Will values documentation of decisions (not just code) as a first-class artifact
+- Source: Multiple requests across session — CUSTOMIZATIONS.md, port map, OneCLI decision doc, CLAUDE.md updates
+- Confidence: 80% | Status: Testing (2+ data points in one session)
+- Validate: observe if this pattern continues in non-NanoClaw contexts
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
