@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-05 (nightly observe)*
+*Last Updated: 2026-04-06*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -44,6 +44,9 @@
 - **Target audience**: Enterprise leaders
 - **Content positioning**: Pragmatic AI governance authority
 - **Email routing**: william.huynh12@gmail.com AND will@theoc.ai
+- **Timezone**: AEST (UTC+10) from April 5 2026; AEDT (UTC+11) Oct–Apr
+- **Google Calendar**: Connected via william.huynh12@gmail.com. Calendars: personal (primary), Family, Holidays in Australia, ppkw18@gmail.com (shared), Will - Elysium, Will AiD - Main
+- **Email identities**: sky.wh1291@gmail.com = Sky's own identity; william.huynh12@gmail.com = Will's personal account (Sky has read/manage access)
 
 ---
 
@@ -293,7 +296,8 @@
 
 ### H18: Will values documentation of decisions (not just code) as a first-class artifact
 - Source: Multiple requests across session — CUSTOMIZATIONS.md, port map, OneCLI decision doc, CLAUDE.md updates
-- Confidence: 80% | Status: Testing (2+ data points in one session)
+- 3rd signal (2026-04-06): End of session, unprompted — "update your claude md and what-not... is there anything worth updating in the knowledge base?"
+- Confidence: 85% | Status: Testing (3 data points across 2 sessions)
 - Validate: observe if this pattern continues in non-NanoClaw contexts
 
 ### H19: Will prefers notifications through existing channels (not new paths)
