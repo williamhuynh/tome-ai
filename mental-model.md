@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-06*
+*Last Updated: 2026-04-06 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -112,6 +112,8 @@
 - **Name the effect, not the mechanism** (Confidence: 85% — confirmed 2026-03-29): Will cuts explanations of how/why. "A higher level of intensity on top of the work itself" vs. "deciding what to hand off, what to keep, when to step back in." Readers don't need the mechanism spelled out.
 - **Colloquial word choice** (Confidence: 80%): Natural speech patterns over structured phrasing. "paralleling more work" (Will) vs. "handling more work streams" (Sky). Less framework, more human.
 - **No hashtags** (Confidence: 90% — stripped from published post 2026-03-29): Don't include hashtags by default in drafts.
+- **No em-dashes** (Confidence: 85% — explicit correction 2026-04-06): Will changed em-dashes to standard hyphens in final post. Quote: "It just makes it less like it'd AI written." Use standard hyphens. Em-dashes = AI marker to Will.
+- **Own the argument, don't just attribute** (Confidence: 85% — explicit correction 2026-04-06): Don't say "researchers call this X" — be assertive and articulate the problem directly with evidence as support. Quote: "we can be more assertive to articulate the problem."
 - **Pivot conjunctions** (Confidence: 90% — confirmed in 3 posts): Will uses "But" to signal turns — "But neither was designed..." / "But it fits less well..." / "But so is the fatigue." — not just "Neither was designed..."
 - **Rhetorical question as mid-post pivot** (Confidence: 80%): Not just for endings — Will uses rhetorical questions to turn personal → reader/team angle. Replaces explanation paragraphs. "And as we begin to expect our teams to also use AI — what impact would this lead to?"
 
@@ -122,6 +124,9 @@
 - Rejected: Governance-warning framing — redirected to opportunity framing
 - Approved: Risk appetite post (pragmatic, enterprise-focused)
 - Approved: Self-written AI apps post (conversational, opportunity-led, practitioner-grounded)
+- Approved: 515 startups post (opportunity framing, process/workflow change focus) — 2026-04-06
+- Corrected: Em-dashes → standard hyphens ("makes it less like it'd AI written") — 2026-04-06
+- Corrected: Attributed framing ("researchers call this") → assertive articulation — 2026-04-06
 
 ---
 
@@ -263,10 +268,10 @@
 - Validate: observe engagement length before he signals implementation
 
 ### H10: Opportunity framing outperforms warning framing across all LinkedIn content
-- Source: 2026-03-09 session (2nd confirming signal: Gen Z post)
-- Confidence: 85% | Status: Testing
-- Evidence: Gen Z framed as "most AI-native" adapters (not victims) → "I really like this"
-- Validate: track approval rate by framing type over next 4 weeks
+- Source: 2026-03-09 session (4th confirming signal as of 2026-04-06)
+- Confidence: 90% | Status: Strong — candidate for promotion to belief at next weekly review
+- Evidence: Gen Z framed as "most AI-native" adapters → "I really like this"; 515 startups post — Will explicitly rejected "opportunistic" angle, requested "opportunity of getting AI right" framing
+- Validate: 1 more confirming signal to promote to belief
 
 ### H11: Will prefers polished output over collaborative iteration
 - Source: "happy for the skill to do more recursive loops before it comes to me"
@@ -325,6 +330,11 @@
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
 - Confidence: 80% | Status: Testing
 - Validate: check next 5 published posts for CTA pattern
+
+### H23: Will avoids em-dashes in LinkedIn posts — associates them with AI-generated writing
+- Source: 2026-04-06 — manually changed em-dashes to standard hyphens in published post. Quote: "It just makes it less like it'd AI written."
+- Confidence: 75% | Status: Testing (1 explicit data point)
+- Validate: check next 3 posts Will shares for dash formatting
 
 ---
 
