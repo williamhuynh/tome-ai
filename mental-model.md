@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-06 (nightly observe)*
+*Last Updated: 2026-04-08 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -200,6 +200,13 @@
 
 *(Top 8 — rotate as new ones accumulate)*
 
+### 2026-04-08: Worker vs. Persistent Agent Correction
+- Sky created NAA project agent as a "worker agent" — Will corrected immediately: "projects like this should be like a persistent identity like aid-coo"
+- Distinction: Worker containers = temporary task execution. Persistent agents = ongoing project with identity, wiki, and continuity.
+- Will caught the mismatch before accepting output ("Are you sure it's a worker agent?") — Grounding Question Pattern confirmed
+- Also notable: Will delegated the fix implementation to Claude Code rather than Sky → suggests parallel tool workflow
+- Confidence: 85% | → Update applied 2026-04-08
+
 ### 2026-03-28: HITL Post — Voice & Structure Corrections
 - Will published HITL post with significant edits: cut ~25% of words, converted assertions to tensions, removed redundant CTA
 - Key patterns confirmed: nuance-before-provocation, tension > assertion, rhetorical punchline as ending, ~150 word target
@@ -325,6 +332,11 @@
 - Source: 2026-04-05 — questioned PAT-in-file approach explicitly after setting it up: "Is that a secure way to store secrets? Is that how it's done in nanoclaw?"
 - Confidence: 70% | Status: Testing (1 data point)
 - Validate: next secrets/credential discussion
+
+### H24: Will routes system/architecture implementation to Claude Code, not Sky
+- Source: 2026-04-08 — after correcting agent type, asked "give me the instructions so I can tell Claude code to implement it"
+- Confidence: 60% | Status: Testing (1 data point)
+- Validate: observe next 3 system change requests — does Will use Claude Code for implementation?
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
