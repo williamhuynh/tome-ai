@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-08 (nightly observe)*
+*Last Updated: 2026-04-12 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -188,6 +188,13 @@
 - Values institutional memory — wants future agents/sessions to have context on WHY something was done
 - Implication: when making architectural decisions, document the reasoning, not just the code
 
+### Proactive System Hygiene (Confidence: 80%)
+- Will identifies lifecycle/coverage gaps before they manifest as problems
+- Examples: folder accumulation + rm safety (2026-04-05), tome-observe journal gaps (2026-04-05), orphan temp worker cleanup (2026-04-12), conversation archival verification (2026-04-12)
+- Will describes the expected lifecycle clearly: "If the Todo item is marked as completed, then I would expect the corresponding worker agent can be cleaned up"
+- Implication: when building features, proactively address cleanup/lifecycle concerns — Will will ask about them
+- Promoted from H20 (2026-04-12) — 3+ signals across 2+ sessions
+
 ### Mode Patterns
 - **Exploration → Summary/Confirmation → Implementation** (Confidence: 95%)
 - Wait for Will to signal transition — don't jump ahead
@@ -199,6 +206,13 @@
 ## Recent Learning Events
 
 *(Top 8 — rotate as new ones accumulate)*
+
+### 2026-04-12: MC Dog-fooding & System Hygiene (H20 Promoted)
+- 3rd consecutive day of MC UX feedback: 4 brain dumps + multiple bug reports
+- Orphan temp worker cleanup raised proactively — H20 promoted to Behavioral Patterns belief
+- Conversation archival pushback: Will knew the pre-compaction hook existed, pushed back on Sky's incorrect "no" answer
+- New pattern: "Spec it up and write it in a Todo" — delegation through todo system
+- Model question: asked about Claude model selection across agents — thinking about cost/quality tradeoffs
 
 ### 2026-04-08: Worker vs. Persistent Agent Correction
 - Sky created NAA project agent as a "worker agent" — Will corrected immediately: "projects like this should be like a persistent identity like aid-coo"
@@ -317,11 +331,7 @@
 - Confidence: 70% | Status: Testing (1 data point)
 - Validate: observe next feature that involves alerting the user
 
-### H20: Will proactively identifies long-term system hygiene/coverage gaps before they manifest
-- Source: Worker containers session 2026-04-05 — raised folder accumulation, rm safety, result_content overwrite before they were problems
-- 2nd signal (2026-04-05 evening): Noticed tome-observe journal "isn't being updated much" — spotted coverage gap before it was flagged, across multiple agents
-- Confidence: 75% | Status: Testing (2 data points, same day — need cross-session confirmation)
-- Validate: observe next feature discussion for unprompted lifecycle/cleanup concerns
+### H20: PROMOTED → Behavioral Patterns: "Proactive System Hygiene" (2026-04-12)
 
 ### H21: Will prefers adaptive/inferred schemas over predefined rigid templates in knowledge systems
 - Source: Wiki design feedback 2026-04-05 — "too many specific MD files", "not all projects will have same content"
@@ -337,6 +347,11 @@
 - Source: 2026-04-08 — after correcting agent type, asked "give me the instructions so I can tell Claude code to implement it"
 - Confidence: 60% | Status: Testing (1 data point)
 - Validate: observe next 3 system change requests — does Will use Claude Code for implementation?
+
+### H25: Will manages work through the todo system rather than ad-hoc chat implementation
+- Source: 2026-04-12 — "Yes, but spec it up and write it in a Todo item" when Sky proposed solutions
+- Confidence: 65% | Status: Testing (1 explicit data point, consistent with H18 documentation preference)
+- Validate: observe next 3 instances where Sky proposes a solution — does Will redirect to todo capture?
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
@@ -360,3 +375,4 @@
 - **H6**: Wants minimal triggers → Validated by full automation of LinkedIn + AI news
 - **H9**: "The real issue is..." structure matches Will's voice → Invalidated; phrase pattern flagged as AI cliché (Ethan Mollick list, 2026-03-12)
 - **H12**: LinkedIn posts average 130–155 words → Promoted to belief in Content Creation (92%)
+- **H20**: Will proactively identifies system hygiene gaps → Promoted to Behavioral Patterns: Proactive System Hygiene (80%)
