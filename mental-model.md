@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-12 (nightly observe)*
+*Last Updated: 2026-04-13 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -25,9 +25,10 @@
   - Agents can create/update/complete todos via MCP tools
   - Daily 8:30am digest cron running
 
-- **Personal knowledge management** (Confidence: 70%)
+- **Personal knowledge management → client deliverable** (Confidence: 75%)
   - Exploring LLM Wiki pattern (Karpathy) for per-project structured knowledge
-  - Thinking stage — not yet implemented
+  - Now actively connecting to Westpac Optifusion proposal — agent-ready research corpus
+  - Quote: "I need the ability to turn customer and behavioural research into an agent ready corpus of information"
 
 ### Long-term (This Quarter)
 - **Portable AI interaction quality improvement** (Confidence: 85%)
@@ -207,6 +208,15 @@
 
 *(Top 8 — rotate as new ones accumulate)*
 
+### 2026-04-13: Westpac Strategy + Todo-as-Drafting-Workspace
+- Will fed extensive Westpac Optifusion Q&A context to aid-coo, then used Sky for strategic framing
+- Key need: turning behavioral research into an agent-ready corpus — connecting personal Karpathy wiki interest to client deliverable
+- Both email drafts (Dave/Nine, Cynthia/Westpac) iterated through MC todo feedback loop — todo system used as drafting workspace
+- Will shared final sent emails back for Sky's learning — deliberate feedback loop for voice calibration
+- 7 brain dump entries via MC — 4th consecutive day of heavy todo usage
+- New professional context captured: Dave (CTO), Cynthia Evans (AiD team), Nine/Lewis/Suzie (prospect), AiD service offerings
+- H8 new evidence (exploration arc), H25 new evidence (todo-as-workflow)
+
 ### 2026-04-12: MC Dog-fooding & System Hygiene (H20 Promoted)
 - 3rd consecutive day of MC UX feedback: 4 brain dumps + multiple bug reports
 - Orphan temp worker cleanup raised proactively — H20 promoted to Behavioral Patterns belief
@@ -271,10 +281,6 @@
 - Quote: "I tend to think in concepts and systems then use analogies to stress test"
 - Confidence: 95%
 
-### 2026-03-07: Response Length Correction
-- "Ah just ask me little by little. That's too much explaining and text"
-- Confidence: 95%
-
 ---
 
 ## Active Hypotheses
@@ -285,7 +291,8 @@
 - Validate: track approval language across next 5 posts, compare data-heavy vs. insight-only
 
 ### H8: Will spends multiple exchanges in conceptual exploration before signalling readiness for implementation
-- Confidence: 70% | Status: Testing (stale — no new evidence since early March)
+- Confidence: 75% | Status: Testing (new evidence 2026-04-13)
+- Evidence: Westpac discussion — 4 context-setting messages → "I need a framework" → specific drilldowns (output formats, concepts). Classic exploration arc.
 - Validate: observe engagement length before he signals implementation
 
 ### H10: Opportunity framing outperforms warning framing across all LinkedIn content
@@ -350,7 +357,8 @@
 
 ### H25: Will manages work through the todo system rather than ad-hoc chat implementation
 - Source: 2026-04-12 — "Yes, but spec it up and write it in a Todo item" when Sky proposed solutions
-- Confidence: 65% | Status: Testing (1 explicit data point, consistent with H18 documentation preference)
+- 2nd signal (2026-04-13): 7 brain dump entries + both email drafts (Dave, Cynthia) iterated through MC todo feedback loop. 4th consecutive day of heavy todo system use.
+- Confidence: 75% | Status: Testing (2 explicit data points + sustained usage pattern)
 - Validate: observe next 3 instances where Sky proposes a solution — does Will redirect to todo capture?
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
