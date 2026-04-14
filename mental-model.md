@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-13 (nightly observe)*
+*Last Updated: 2026-04-14 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -208,6 +208,14 @@
 
 *(Top 8 — rotate as new ones accumulate)*
 
+### 2026-04-14: Internal Cost Rates + Delegation Routing Correction
+- Will provided AiD team salary spreadsheet for normalised internal cost rate calculation
+- Rapid-fire iterative refinement: 5-6 sequential corrections in ~10 minutes on numerical data
+- **Explicit correction**: "this task should of been iterated with AID COO" — Sky handled AiD business data directly instead of delegating to aid-coo
+- Proactive system hygiene: checked on scheduled worker cleanup job, noticed orphaned workers (H20 confirmed)
+- H25 further confirmed: 5th consecutive day using todo system ("Update the to-do as you work on it")
+- New hypothesis H26: Will expects Sky to proactively route AiD business data tasks to aid-coo
+
 ### 2026-04-13: Westpac Strategy + Todo-as-Drafting-Workspace
 - Will fed extensive Westpac Optifusion Q&A context to aid-coo, then used Sky for strategic framing
 - Key need: turning behavioral research into an agent-ready corpus — connecting personal Karpathy wiki interest to client deliverable
@@ -267,19 +275,6 @@
 - Granola discussion expanded then Will pulled it back himself
 - Learning: Wait for the pullback before planning implementation.
 - Confidence: 80%
-
-### 2026-03-07: Premature Implementation Correction
-- Wrote implementation code during exploration phase
-- Correction: "We weren't at that stage yet"
-- Confidence: 95%
-
-### 2026-03-07: Accuracy Over Speed
-- Quote: "I typically will be happier if it took a moment longer to think or verify"
-- Confidence: 90%
-
-### 2026-03-07: Systems Thinker Pattern
-- Quote: "I tend to think in concepts and systems then use analogies to stress test"
-- Confidence: 95%
 
 ---
 
@@ -358,8 +353,9 @@
 ### H25: Will manages work through the todo system rather than ad-hoc chat implementation
 - Source: 2026-04-12 — "Yes, but spec it up and write it in a Todo item" when Sky proposed solutions
 - 2nd signal (2026-04-13): 7 brain dump entries + both email drafts (Dave, Cynthia) iterated through MC todo feedback loop. 4th consecutive day of heavy todo system use.
-- Confidence: 75% | Status: Testing (2 explicit data points + sustained usage pattern)
-- Validate: observe next 3 instances where Sky proposes a solution — does Will redirect to todo capture?
+- 3rd signal (2026-04-14): "I want to progress on the following to do. Update the to-do as you work on it." — 5th consecutive day, explicit todo-first workflow.
+- Confidence: 80% | Status: Testing — approaching promotion threshold (3 explicit data points + 5 days sustained usage)
+- Validate: observe next 2 instances where Sky proposes a solution — does Will redirect to todo capture?
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
@@ -370,6 +366,12 @@
 - Source: 2026-04-06 — manually changed em-dashes to standard hyphens in published post. Quote: "It just makes it less like it'd AI written."
 - Confidence: 75% | Status: Testing (1 explicit data point)
 - Validate: check next 3 posts Will shares for dash formatting
+
+### H26: Will expects Sky to proactively route AiD business data tasks to aid-coo
+- Source: 2026-04-14 — "this task should of been iterated with AID COO" after Sky handled internal cost rate calculation directly instead of delegating
+- Confidence: 65% | Status: Testing (1 explicit correction)
+- Scope: Tasks involving AiD team data (salaries, rates, team structure, internal pricing) should be routed to aid-coo even when Will provides data directly to Sky
+- Validate: next time Will provides AiD internal data, check if Sky delegates to aid-coo and whether Will needs to correct
 
 ---
 
