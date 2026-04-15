@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-14 (nightly observe)*
+*Last Updated: 2026-04-15 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -113,7 +113,7 @@
 - **Name the effect, not the mechanism** (Confidence: 85% — confirmed 2026-03-29): Will cuts explanations of how/why. "A higher level of intensity on top of the work itself" vs. "deciding what to hand off, what to keep, when to step back in." Readers don't need the mechanism spelled out.
 - **Colloquial word choice** (Confidence: 80%): Natural speech patterns over structured phrasing. "paralleling more work" (Will) vs. "handling more work streams" (Sky). Less framework, more human.
 - **No hashtags** (Confidence: 90% — stripped from published post 2026-03-29): Don't include hashtags by default in drafts.
-- **No em-dashes** (Confidence: 85% — explicit correction 2026-04-06): Will changed em-dashes to standard hyphens in final post. Quote: "It just makes it less like it'd AI written." Use standard hyphens. Em-dashes = AI marker to Will.
+- **No em-dashes — anywhere** (Confidence: 95% — 2 explicit corrections, 2026-04-06 + 2026-04-14): Will changed em-dashes to standard hyphens in LinkedIn post AND Cochlear client email. Quote: "It just makes it less like it'd AI written." Use hyphens or en-dashes. Em-dashes = AI marker to Will. Applies to ALL writing, not just LinkedIn.
 - **Own the argument, don't just attribute** (Confidence: 85% — explicit correction 2026-04-06): Don't say "researchers call this X" — be assertive and articulate the problem directly with evidence as support. Quote: "we can be more assertive to articulate the problem."
 - **Pivot conjunctions** (Confidence: 90% — confirmed in 3 posts): Will uses "But" to signal turns — "But neither was designed..." / "But it fits less well..." / "But so is the fatigue." — not just "Neither was designed..."
 - **Rhetorical question as mid-post pivot** (Confidence: 80%): Not just for endings — Will uses rhetorical questions to turn personal → reader/team angle. Replaces explanation paragraphs. "And as we begin to expect our teams to also use AI — what impact would this lead to?"
@@ -126,7 +126,7 @@
 - Approved: Risk appetite post (pragmatic, enterprise-focused)
 - Approved: Self-written AI apps post (conversational, opportunity-led, practitioner-grounded)
 - Approved: 515 startups post (opportunity framing, process/workflow change focus) — 2026-04-06
-- Corrected: Em-dashes → standard hyphens ("makes it less like it'd AI written") — 2026-04-06
+- Corrected: Em-dashes → standard hyphens ("makes it less like it'd AI written") — 2026-04-06, reconfirmed in Cochlear email 2026-04-14 (universal, not LinkedIn-only)
 - Corrected: Attributed framing ("researchers call this") → assertive articulation — 2026-04-06
 
 ---
@@ -196,6 +196,13 @@
 - Implication: when building features, proactively address cleanup/lifecycle concerns — Will will ask about them
 - Promoted from H20 (2026-04-12) — 3+ signals across 2+ sessions
 
+### Todo-First Workflow (Confidence: 85%)
+- Will manages work through the MC todo system rather than ad-hoc chat
+- Brain dumps for task capture, feedback loops for iteration, email drafts through todo result_content
+- 6 consecutive days of heavy usage (2026-04-10 → 2026-04-15), 10+ brain dumps on peak days
+- Implication: when Will raises a task or issue, capture it in the todo system first — don't solve inline
+- Promoted from H25 (2026-04-15) — 3 explicit signals + 6 days sustained usage
+
 ### Mode Patterns
 - **Exploration → Summary/Confirmation → Implementation** (Confidence: 95%)
 - Wait for Will to signal transition — don't jump ahead
@@ -207,6 +214,14 @@
 ## Recent Learning Events
 
 *(Top 8 — rotate as new ones accumulate)*
+
+### 2026-04-15: MC UX Iteration, Cochlear Email, SharePoint Architecture
+- 10 brain dump entries spanning MC bugs, business tasks, architecture questions, feature requests — 6th consecutive day of heavy MC/todo usage → H25 promoted to belief
+- Cochlear email drafted and sent through aid-coo + MC feedback loop — final email confirmed no em-dashes
+- Will asked if aid-coo learned the no-em-dash rule — meta-awareness of agent learning compliance
+- SharePoint access architecture question — security-conscious separation of concerns (H22 2nd signal → 75%)
+- Enter key fix for todo feedback field iterated through MC — confirmed working but newline rendering issue found
+- PWA request for MC on Android — mobile access becoming priority
 
 ### 2026-04-14: Internal Cost Rates + Delegation Routing Correction
 - Will provided AiD team salary spreadsheet for normalised internal cost rate calculation
@@ -270,11 +285,6 @@
 - Governance-warning angle rejected; redirected to adaptation/opportunity
 - Learning: Lead with what becomes possible, not what's broken.
 - Confidence: 90%
-
-### 2026-03-09: Scope Self-Correction Pattern
-- Granola discussion expanded then Will pulled it back himself
-- Learning: Wait for the pullback before planning implementation.
-- Confidence: 80%
 
 ---
 
@@ -340,32 +350,29 @@
 - Confidence: 70% | Status: Testing (1 data point)
 - Validate: next time a schema/template is proposed, observe pushback on rigidity
 
-### H22: Will is security-conscious about secrets storage even in trusted/familiar contexts
+### H22: Will is security-conscious about architecture and secrets even in trusted/familiar contexts
 - Source: 2026-04-05 — questioned PAT-in-file approach explicitly after setting it up: "Is that a secure way to store secrets? Is that how it's done in nanoclaw?"
-- Confidence: 70% | Status: Testing (1 data point)
-- Validate: next secrets/credential discussion
+- 2nd signal (2026-04-15): SharePoint access question — "I've consciously made this implementation very separated for security purposes. Should there be like an integration layer externalised?"
+- Confidence: 75% | Status: Testing (2 data points)
+- Validate: next secrets/credential or architecture separation discussion
 
 ### H24: Will routes system/architecture implementation to Claude Code, not Sky
 - Source: 2026-04-08 — after correcting agent type, asked "give me the instructions so I can tell Claude code to implement it"
 - Confidence: 60% | Status: Testing (1 data point)
 - Validate: observe next 3 system change requests — does Will use Claude Code for implementation?
 
-### H25: Will manages work through the todo system rather than ad-hoc chat implementation
-- Source: 2026-04-12 — "Yes, but spec it up and write it in a Todo item" when Sky proposed solutions
-- 2nd signal (2026-04-13): 7 brain dump entries + both email drafts (Dave, Cynthia) iterated through MC todo feedback loop. 4th consecutive day of heavy todo system use.
-- 3rd signal (2026-04-14): "I want to progress on the following to do. Update the to-do as you work on it." — 5th consecutive day, explicit todo-first workflow.
-- Confidence: 80% | Status: Testing — approaching promotion threshold (3 explicit data points + 5 days sustained usage)
-- Validate: observe next 2 instances where Sky proposes a solution — does Will redirect to todo capture?
+### H25: PROMOTED → Behavioral Patterns: "Todo-First Workflow" (2026-04-15)
+- Source: 6 consecutive days of heavy MC todo usage (2026-04-10 → 2026-04-15), 3 explicit signals, 10+ brain dumps on peak days
+- Promoted at 85% confidence
 
 ### H13: Will never ends with an explicit "What do you think?" CTA — always uses rhetorical reframe
 - Source: HITL post, removed explicit CTA question in favour of rhetorical punchline
 - Confidence: 80% | Status: Testing
 - Validate: check next 5 published posts for CTA pattern
 
-### H23: Will avoids em-dashes in LinkedIn posts — associates them with AI-generated writing
-- Source: 2026-04-06 — manually changed em-dashes to standard hyphens in published post. Quote: "It just makes it less like it'd AI written."
-- Confidence: 75% | Status: Testing (1 explicit data point)
-- Validate: check next 3 posts Will shares for dash formatting
+### H23: PROMOTED → Communication Preferences: "No em-dashes — anywhere" (2026-04-14)
+- Source: 2026-04-06 LinkedIn post + 2026-04-14 Cochlear client email — both had em-dashes changed to hyphens
+- Promoted at 95% confidence — 2 data points across 2 different contexts (social + client email) confirms universal preference
 
 ### H26: Will expects Sky to proactively route AiD business data tasks to aid-coo
 - Source: 2026-04-14 — "this task should of been iterated with AID COO" after Sky handled internal cost rate calculation directly instead of delegating
@@ -386,3 +393,4 @@
 - **H9**: "The real issue is..." structure matches Will's voice → Invalidated; phrase pattern flagged as AI cliché (Ethan Mollick list, 2026-03-12)
 - **H12**: LinkedIn posts average 130–155 words → Promoted to belief in Content Creation (92%)
 - **H20**: Will proactively identifies system hygiene gaps → Promoted to Behavioral Patterns: Proactive System Hygiene (80%)
+- **H25**: Will manages work through todo system → Promoted to Behavioral Patterns: Todo-First Workflow (85%)
