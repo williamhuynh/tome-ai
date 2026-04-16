@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-15 (nightly observe)*
+*Last Updated: 2026-04-16 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -215,6 +215,15 @@
 
 *(Top 8 — rotate as new ones accumulate)*
 
+### 2026-04-16: Rate Positioning, PWA Launch, Cross-Agent Client Email Routing
+- 12-round iterative refinement on AiD internal cost rates — methodical team-by-team placement (Jana, Will Lobbs, Aldo Sri, Imran, Harsh), title positioning ("we are the AI team"), label correction ("cost rates" not rates)
+- Mission Control PWA launched and installed on Android — "It worked" approval, rotation behaviour follow-up issue noted
+- All AiD client-facing emails (Sze/Alceon, Dave Sherman/Bound, Brenton Crab/ex-QBE) routed to aid-coo — H26 partial confirmation (mixed signal: internal rate task stayed in worker)
+- New interaction mode observed: **thinking-partner vs executor** distinction — "Help me think through it slightly" invites strategic reasoning, not just execution. → H27 added
+- 7th consecutive day of heavy MC/todo usage (6 brain dumps) — Todo-First Workflow belief continues to accumulate
+- Nudge scheduling preference: manual todo over cron for judgement-dependent client follow-ups
+- New professional context: Sze (head of AI, Alceon), David Wilshire (MD Private Equities, Alceon), Joel (peer of Sze), Dave Sherman + Kelvin Dart + Oz (Bound Interactive partners), Brenton Crab (ex-QBE claims exec)
+
 ### 2026-04-15: MC UX Iteration, Cochlear Email, SharePoint Architecture
 - 10 brain dump entries spanning MC bugs, business tasks, architecture questions, feature requests — 6th consecutive day of heavy MC/todo usage → H25 promoted to belief
 - Cochlear email drafted and sent through aid-coo + MC feedback loop — final email confirmed no em-dashes
@@ -376,9 +385,18 @@
 
 ### H26: Will expects Sky to proactively route AiD business data tasks to aid-coo
 - Source: 2026-04-14 — "this task should of been iterated with AID COO" after Sky handled internal cost rate calculation directly instead of delegating
-- Confidence: 65% | Status: Testing (1 explicit correction)
+- Confidence: 65% | Status: Testing (mixed signals 2026-04-16)
 - Scope: Tasks involving AiD team data (salaries, rates, team structure, internal pricing) should be routed to aid-coo even when Will provides data directly to Sky
-- Validate: next time Will provides AiD internal data, check if Sky delegates to aid-coo and whether Will needs to correct
+- 2026-04-16 signal (mixed): Client-facing AiD emails (Sze, Dave Sherman, Brenton Crab) routed to aid-coo as expected. But the existing "Send Anurag internal cost" rate task continued in the worker (not migrated to aid-coo mid-task). Suggests: start new AiD tasks in aid-coo, but mid-task delegation migration isn't expected.
+- Validate: next NEW AiD data task — does Sky route correctly from the start?
+
+### H27: Will signals thinking-partner mode with explicit phrases; expects Sky to reason through the decision WITH him, not just for him
+- Source: 2026-04-16 — "Abitnweird isn't it. Help me think through it slightly. I want to position us to be much more deep in expertise..." and "I wonder is it worthwhile mentioning... Or does that diminish the value?"
+- Confidence: 60% | Status: Testing (2 instances, same session)
+- Scope: Strategic/positioning tasks (pricing, voice, client framing) trigger this mode; executable tasks (send this draft) do not
+- Signal phrases observed: "Help me think through it", "Abit weird isn't it", "I wonder...", "Or does that [tradeoff]?"
+- Implication: When triggered, present options with tradeoffs — don't just execute the first reasonable interpretation. Offer "option A/B/C" style.
+- Validate: next strategic task — does Will signal thinking-partner mode before or during, and does Sky pattern-match?
 
 ---
 
