@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-16 (nightly observe)*
+*Last Updated: 2026-04-17 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -199,9 +199,16 @@
 ### Todo-First Workflow (Confidence: 85%)
 - Will manages work through the MC todo system rather than ad-hoc chat
 - Brain dumps for task capture, feedback loops for iteration, email drafts through todo result_content
-- 6 consecutive days of heavy usage (2026-04-10 → 2026-04-15), 10+ brain dumps on peak days
+- 8 consecutive days of heavy usage (2026-04-10 → 2026-04-17), 10+ brain dumps on peak days
 - Implication: when Will raises a task or issue, capture it in the todo system first — don't solve inline
-- Promoted from H25 (2026-04-15) — 3 explicit signals + 6 days sustained usage
+- Promoted from H25 (2026-04-15) — 3 explicit signals + 8 days sustained usage
+
+### Documents Decisions as First-Class Artifacts (Confidence: 88%)
+- Will treats documentation of *why* a decision was made as equal-priority to the decision itself
+- 4+ explicit signals across 3+ sessions: CUSTOMIZATIONS.md + port map + OneCLI doc (2026-04-04), knowledge-base check (2026-04-06), Todo result_content as drafting log (2026-04-13+), explicit persistence reasoning (2026-04-17)
+- Strongest signal (2026-04-17): "make sure you include details and context and overall plan as we will lose context from this Todo" — Will reasons explicitly about agent context windows and instructs Sky to build around them
+- Implication: when making architectural/strategic decisions, capture reasoning + tradeoffs + rejected options — not just the chosen path. Assume the next agent session won't have this conversation in context.
+- Promoted from H18 (2026-04-17) — 4 signals across 3 sessions
 
 ### Mode Patterns
 - **Exploration → Summary/Confirmation → Implementation** (Confidence: 95%)
@@ -214,6 +221,16 @@
 ## Recent Learning Events
 
 *(Top 8 — rotate as new ones accumulate)*
+
+### 2026-04-17: SkyMeet Architecture Deep-Dive
+- 7-round collaborative architecture exploration for "sending AI agents to meetings" — Will fully in thinking-partner mode throughout (H27 strongest signal yet)
+- Reference-tool-as-UX-benchmark pattern observed: "similar to how granola works" pivoted Sky from participant-bot to sidecar architecture — when Will names an existing tool, it's the design spec
+- Locked-in decisions: Windows (not Mac — explicit correction), sidecar pattern, Deepgram Nova-3 streaming (over Flux, over faster-whisper), retire Granola after SkyMeet proves out, integrate via MC Meetings module + nanoclaw specialists
+- Compressed-timeline approval: Will skipped proposed Phase 1 (Telegram-DM MVP validation) in favour of going straight to Electron app — compression under direction confidence
+- Over-engineered abstraction cut: Will rejected the speculative `TranscriptionProvider` interface with faster-whisper stub — no abstractions for hypothetical future use
+- Explicit persistence reasoning: "we will lose context from this Todo" — Will designs interactions around agent context windows → H18 promoted
+- 8th consecutive day of heavy MC/todo usage (3 brain dumps)
+- Three build todos created for SkyMeet: MC Meetings module, naa-project in-meeting mode, Windows Electron app
 
 ### 2026-04-16: Rate Positioning, PWA Launch, Cross-Agent Client Email Routing
 - 12-round iterative refinement on AiD internal cost rates — methodical team-by-team placement (Jana, Will Lobbs, Aldo Sri, Imran, Harsh), title positioning ("we are the AI team"), label correction ("cost rates" not rates)
@@ -341,11 +358,8 @@
 - Confidence: 70% | Status: Testing
 - Validate: observe next upgrade or dependency decision
 
-### H18: Will values documentation of decisions (not just code) as a first-class artifact
-- Source: Multiple requests across session — CUSTOMIZATIONS.md, port map, OneCLI decision doc, CLAUDE.md updates
-- 3rd signal (2026-04-06): End of session, unprompted — "update your claude md and what-not... is there anything worth updating in the knowledge base?"
-- Confidence: 85% | Status: Testing (3 data points across 2 sessions)
-- Validate: observe if this pattern continues in non-NanoClaw contexts
+### H18: PROMOTED → Behavioral Patterns: "Documents Decisions as First-Class Artifacts" (2026-04-17)
+- Promoted at 88% confidence — 4 signals across 3 sessions, including explicit context-window reasoning on 2026-04-17
 
 ### H19: Will prefers notifications through existing channels (not new paths)
 - Source: Worker containers session 2026-04-05 — "I'm missing now its notification via sky"
@@ -391,12 +405,25 @@
 - Validate: next NEW AiD data task — does Sky route correctly from the start?
 
 ### H27: Will signals thinking-partner mode with explicit phrases; expects Sky to reason through the decision WITH him, not just for him
-- Source: 2026-04-16 — "Abitnweird isn't it. Help me think through it slightly. I want to position us to be much more deep in expertise..." and "I wonder is it worthwhile mentioning... Or does that diminish the value?"
-- Confidence: 60% | Status: Testing (2 instances, same session)
-- Scope: Strategic/positioning tasks (pricing, voice, client framing) trigger this mode; executable tasks (send this draft) do not
-- Signal phrases observed: "Help me think through it", "Abit weird isn't it", "I wonder...", "Or does that [tradeoff]?"
-- Implication: When triggered, present options with tradeoffs — don't just execute the first reasonable interpretation. Offer "option A/B/C" style.
-- Validate: next strategic task — does Will signal thinking-partner mode before or during, and does Sky pattern-match?
+- Source: 2026-04-16 — "Abitnweird isn't it. Help me think through it slightly..." and "I wonder is it worthwhile mentioning... Or does that diminish the value?"
+- 2026-04-17 (strongest signal): Entire 7-round SkyMeet architecture arc was collaborative reasoning. Signal phrases: "I'm not sure whether...", "I wonder...", "What's the difference?". Will did not instruct "build X" once — he interrogated options and agreed decisions jointly.
+- Confidence: 75% | Status: Testing (4+ instances across 2 sessions)
+- Scope: Strategic/positioning AND architecture tasks now. Executable tasks (send this draft) still bypass this mode.
+- Signal phrases observed: "Help me think through it", "Abit weird isn't it", "I wonder...", "Or does that [tradeoff]?", "I'm not sure whether...", "What's the difference?"
+- Implication: When triggered, present options with tradeoffs — don't just execute the first reasonable interpretation. Offer "option A/B/C" style with honest recommendation.
+- Validate: next strategic/architecture task — 1 more confirming signal and promote to belief.
+
+### H28: When Will names an existing tool as reference ("similar to how X works"), that becomes the definitive UX spec
+- Source: 2026-04-17 — "Similar to how granola works, you can ask it questions during the meeting and also it transcribes" pivoted SkyMeet architecture from participant-bot to sidecar
+- Confidence: 65% | Status: Testing (1 strong data point — the pivot was significant)
+- Implication: when Will anchors to an existing tool, stop proposing alternative UX patterns and design toward matching the reference
+- Validate: next tool-replacement/build conversation — does Will name a predecessor, and is that the spec?
+
+### H29: Will rejects abstraction layers built for speculative future scenarios
+- Source: 2026-04-17 — rejected proposed `TranscriptionProvider` interface + `FasterWhisperProvider` stub "for later" — "don't worry about whisper. We don't need the local transcription option either."
+- Confidence: 70% | Status: Testing (1 explicit cut today, pairs with earlier Scope Exploration Pattern signals)
+- Implication: build the concrete path. Don't add optionality, interfaces, or stubs for hypothetical future needs Will hasn't asked for. Let YAGNI win.
+- Validate: next architecture proposal with abstraction layers — does Will cut them?
 
 ---
 
@@ -412,3 +439,4 @@
 - **H12**: LinkedIn posts average 130–155 words → Promoted to belief in Content Creation (92%)
 - **H20**: Will proactively identifies system hygiene gaps → Promoted to Behavioral Patterns: Proactive System Hygiene (80%)
 - **H25**: Will manages work through todo system → Promoted to Behavioral Patterns: Todo-First Workflow (85%)
+- **H18**: Will values documentation of decisions as first-class artifacts → Promoted to Behavioral Patterns: Documents Decisions as First-Class Artifacts (88%)
