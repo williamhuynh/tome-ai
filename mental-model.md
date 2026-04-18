@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-17 (nightly observe)*
+*Last Updated: 2026-04-18 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -196,12 +196,14 @@
 - Implication: when building features, proactively address cleanup/lifecycle concerns — Will will ask about them
 - Promoted from H20 (2026-04-12) — 3+ signals across 2+ sessions
 
-### Todo-First Workflow (Confidence: 85%)
+### Todo-First Workflow (Confidence: 88%)
 - Will manages work through the MC todo system rather than ad-hoc chat
 - Brain dumps for task capture, feedback loops for iteration, email drafts through todo result_content
-- 8 consecutive days of heavy usage (2026-04-10 → 2026-04-17), 10+ brain dumps on peak days
-- Implication: when Will raises a task or issue, capture it in the todo system first — don't solve inline
-- Promoted from H25 (2026-04-15) — 3 explicit signals + 8 days sustained usage
+- 9 consecutive days of heavy usage (2026-04-10 → 2026-04-18), 10+ brain dumps on peak days
+- **Drafts meant for Will to act on later belong in todos, not chat** (2026-04-18 correction: "You should be updating the Todo list with this so I can send later")
+- Prefer updating an existing relevant todo over creating a new one for the same stream of work ("You can update the existing Todo for the GenLife one", 2026-04-18)
+- Implication: when Will raises a task or issue, capture it in the todo system first — don't solve inline. When drafting content (emails, nudges, case studies) for async sending, the default surface is a todo row.
+- Promoted from H25 (2026-04-15) — 3 explicit signals + 8 days sustained usage. Reinforced 2026-04-18 with explicit correction.
 
 ### Documents Decisions as First-Class Artifacts (Confidence: 88%)
 - Will treats documentation of *why* a decision was made as equal-priority to the decision itself
@@ -397,12 +399,13 @@
 - Source: 2026-04-06 LinkedIn post + 2026-04-14 Cochlear client email — both had em-dashes changed to hyphens
 - Promoted at 95% confidence — 2 data points across 2 different contexts (social + client email) confirms universal preference
 
-### H26: Will expects Sky to proactively route AiD business data tasks to aid-coo
+### H26: Will expects Sky to proactively route AiD business and client-facing work to aid-coo
 - Source: 2026-04-14 — "this task should of been iterated with AID COO" after Sky handled internal cost rate calculation directly instead of delegating
-- Confidence: 65% | Status: Testing (mixed signals 2026-04-16)
-- Scope: Tasks involving AiD team data (salaries, rates, team structure, internal pricing) should be routed to aid-coo even when Will provides data directly to Sky
-- 2026-04-16 signal (mixed): Client-facing AiD emails (Sze, Dave Sherman, Brenton Crab) routed to aid-coo as expected. But the existing "Send Anurag internal cost" rate task continued in the worker (not migrated to aid-coo mid-task). Suggests: start new AiD tasks in aid-coo, but mid-task delegation migration isn't expected.
-- Validate: next NEW AiD data task — does Sky route correctly from the start?
+- Confidence: 75% | Status: Testing — close to promotion (3+ sessions, clear scope expansion)
+- Scope (expanded 2026-04-18): (a) AiD team data (salaries, rates, team structure, internal pricing), (b) client-facing drafts and comms (emails, case studies, nudges for Alceon/Bound/ex-QBE contacts)
+- 2026-04-16 signal (mixed): Client-facing AiD emails (Sze, Dave Sherman, Brenton Crab) routed to aid-coo as expected. But the existing "Send Anurag internal cost" rate task continued in the worker (not migrated to aid-coo mid-task). Start new AiD tasks in aid-coo; mid-task migration not expected.
+- 2026-04-18 signal (strong): Two back-to-back explicit instructions — "let's get and draft the GenLife case study with aid-coo. He might have the context. If not, I could send some context" and "draft the nudge for Sze using aid coo". Both client-facing, both explicitly routed to aid-coo. Also shows Will's context-offer pattern — offers to send context if aid-coo lacks it.
+- Validate: 1 more confirming signal on a NEW AiD task routed correctly from the start → promote to belief.
 
 ### H27: Will signals thinking-partner mode with explicit phrases; expects Sky to reason through the decision WITH him, not just for him
 - Source: 2026-04-16 — "Abitnweird isn't it. Help me think through it slightly..." and "I wonder is it worthwhile mentioning... Or does that diminish the value?"
@@ -424,6 +427,12 @@
 - Confidence: 70% | Status: Testing (1 explicit cut today, pairs with earlier Scope Exploration Pattern signals)
 - Implication: build the concrete path. Don't add optionality, interfaces, or stubs for hypothetical future needs Will hasn't asked for. Let YAGNI win.
 - Validate: next architecture proposal with abstraction layers — does Will cut them?
+
+### H30: Long worker-todo result_content threads become unreadable; Will loses the plot after several rounds
+- Source: 2026-04-18 — two adjacent worker-todo feedback messages on the SkyMeet build todos: "I don't really understand the details anymore. Just tell me is there anything left to do on this Todo?" and "What do I do now?"
+- Confidence: 50% | Status: Testing (1 observation across 2 same-day instances)
+- Implication: lead each new round in worker-todo result_content with a short "status / what's left" summary. Keep round updates lean. Don't assume Will has re-read prior rounds.
+- Validate: next 3–4-round worker-todo thread — does Will ask "what's left?" or "what do I do now?" again?
 
 ---
 
