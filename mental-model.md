@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-18 (nightly observe)*
+*Last Updated: 2026-04-19 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
