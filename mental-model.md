@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-19 (nightly observe)*
+*Last Updated: 2026-04-20 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -381,10 +381,13 @@
 - Confidence: 75% | Status: Testing (2 data points)
 - Validate: next secrets/credential or architecture separation discussion
 
-### H24: Will routes system/architecture implementation to Claude Code, not Sky
+### H24: Will routes system/architecture implementation to Claude Code / host AI, not Sky
 - Source: 2026-04-08 — after correcting agent type, asked "give me the instructions so I can tell Claude code to implement it"
-- Confidence: 60% | Status: Testing (1 data point)
-- Validate: observe next 3 system change requests — does Will use Claude Code for implementation?
+- 2nd signal (2026-04-20): MC cleanup debugging session — "For the host changes, create a Todo list item with context and suggested details of actions to take. I'll pass it to the host ai to do." Will's role: reasoning + hypothesis framing. Sky's role: analysis + Todo creation. Execution on host: other agent.
+- Confidence: 75% | Status: Testing (2 clean data points, close to promotion)
+- Pattern: Sky does reasoning/analysis + captures context into a Todo row; a separate agent (Claude Code / host AI / aid-coo) executes the change. Todo is the handoff contract.
+- Validate: 1 more confirming signal on a system/host change task — promote to Behavioral Patterns belief.
+- → Confidence updated [2026-04-20]
 
 ### H25: PROMOTED → Behavioral Patterns: "Todo-First Workflow" (2026-04-15)
 - Source: 6 consecutive days of heavy MC todo usage (2026-04-10 → 2026-04-15), 3 explicit signals, 10+ brain dumps on peak days
@@ -433,6 +436,13 @@
 - Confidence: 50% | Status: Testing (1 observation across 2 same-day instances)
 - Implication: lead each new round in worker-todo result_content with a short "status / what's left" summary. Keep round updates lean. Don't assume Will has re-read prior rounds.
 - Validate: next 3–4-round worker-todo thread — does Will ask "what's left?" or "what do I do now?" again?
+
+### H31: Short emails are a leadership signal for Will — brevity projects authority in written comms
+- Source: 2026-04-19 San/LIRS email drafting — "It's too long. Long emails make me look not leadership. 3 and 4 should just be inferred. Don't need to over explain some bits."
+- Confidence: 50% | Status: Testing (1 explicit observation, but strongly worded)
+- Implication: for client/partner/exec email drafts, target shorter than default. Trust that obvious implications will be inferred; don't spell out next steps. "Strength but not ego" — firm position without over-explaining or being transactional.
+- Distinct from existing signal-to-noise value: this is specifically about perceived authority — short = senior voice in Will's mental model.
+- Validate: next 3 leadership/exec emails — does Will cut length even when content is correct? Promote to belief at 2+ confirming signals.
 
 ---
 
