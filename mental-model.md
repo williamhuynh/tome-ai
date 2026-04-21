@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-20 (nightly observe)*
+*Last Updated: 2026-04-21 (nightly observe)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -112,7 +112,7 @@
 - **Cut the scaffolding**: Don't spell out the assumption before the implication — trust the evidence paragraphs to carry it. Will removes setup paragraphs that over-explain the point.
 - **Name the effect, not the mechanism** (Confidence: 85% — confirmed 2026-03-29): Will cuts explanations of how/why. "A higher level of intensity on top of the work itself" vs. "deciding what to hand off, what to keep, when to step back in." Readers don't need the mechanism spelled out.
 - **Colloquial word choice** (Confidence: 80%): Natural speech patterns over structured phrasing. "paralleling more work" (Will) vs. "handling more work streams" (Sky). Less framework, more human.
-- **No hashtags** (Confidence: 90% — stripped from published post 2026-03-29): Don't include hashtags by default in drafts.
+- **At most one topical hashtag; never multiple** (Confidence: 75% — refined 2026-04-21): Default to zero hashtags. Will accepted a single `#AgenticAI` on the 2026-04-21 agentic-automation post but stripped all hashtags from the 2026-03-29 post. Never include multiple hashtags. If including one, it should be the single most topical tag.
 - **No em-dashes — anywhere** (Confidence: 95% — 2 explicit corrections, 2026-04-06 + 2026-04-14): Will changed em-dashes to standard hyphens in LinkedIn post AND Cochlear client email. Quote: "It just makes it less like it'd AI written." Use hyphens or en-dashes. Em-dashes = AI marker to Will. Applies to ALL writing, not just LinkedIn.
 - **Own the argument, don't just attribute** (Confidence: 85% — explicit correction 2026-04-06): Don't say "researchers call this X" — be assertive and articulate the problem directly with evidence as support. Quote: "we can be more assertive to articulate the problem."
 - **Pivot conjunctions** (Confidence: 90% — confirmed in 3 posts): Will uses "But" to signal turns — "But neither was designed..." / "But it fits less well..." / "But so is the fatigue." — not just "Neither was designed..."
@@ -212,6 +212,14 @@
 - Implication: when making architectural/strategic decisions, capture reasoning + tradeoffs + rejected options — not just the chosen path. Assume the next agent session won't have this conversation in context.
 - Promoted from H18 (2026-04-17) — 4 signals across 3 sessions
 
+### Routes AiD + Client-Facing Work to aid-coo (Confidence: 85%)
+- Will consistently routes AiD internal business work AND client-facing drafts/emails to aid-coo from the start, not Sky directly
+- 6+ signals across 5+ sessions: 2026-04-14 explicit correction ("this task should of been iterated with AID COO"), 2026-04-16 client emails (Sze/Alceon, Sherman/Bound, Crab/ex-QBE), 2026-04-18 GenLife case study + Sze nudge, 2026-04-21 SOW reply to Jen/legalsuper + Jon Maloney wrap-up + Nine follow-up (3 signals same day)
+- Scope: (a) AiD team data (salaries, rates, team structure, internal pricing), (b) client-facing drafts and comms (emails, case studies, nudges), (c) wrap-up / relationship-maintenance emails. Will proactively supplies wiki-ready context when delegating ("Yeh for the wiki, this is Jon Maloney, CTO...").
+- Nuance: mid-task migration not expected. If a task is already in progress in a worker, it stays there. Route NEW AiD/client tasks to aid-coo from the start.
+- Implication: before starting any AiD/client-touching task, check if aid-coo should own it. Default yes for client-facing comms and AiD team data. → Update applied [2026-04-21]
+- Promoted from H26 (2026-04-21) — 6 signals across 5 sessions
+
 ### Mode Patterns
 - **Exploration → Summary/Confirmation → Implementation** (Confidence: 95%)
 - Wait for Will to signal transition — don't jump ahead
@@ -223,6 +231,15 @@
 ## Recent Learning Events
 
 *(Top 8 — rotate as new ones accumulate)*
+
+### 2026-04-21: Knowledge Architecture Diagram + LinkedIn Voice Refinement + aid-coo Routing Promoted
+- Excalidraw architecture diagram commissioned to explain NanoClaw ecosystem. Will corrected Sky's rendering multiple times with precise architectural detail: "NAA is just one project amongst many. We have main orchestrator (Sky), specialised project/domain agents (aid-coo, NAA), worker to-do agents." Also: "only MC spawns todo workers" → H35 added (architecture precision).
+- 5-round LinkedIn post on human experience value — Will ultimately wrote his own final featuring Starbucks baristas anchor story. Key signals: "automation is a given" positioning (H32 new), concrete story anchor beats abstract example (H33 new), learning-by-example pattern confirmed (H34 new — when drafts miss after multiple rounds, Will writes final himself). One `#AgenticAI` hashtag accepted in final → H16 refined from "no hashtags" to "at most one topical".
+- **H26 promoted to belief: "Routes AiD + Client-Facing Work to aid-coo"** (85%) — 3 clean signals same day (SOW/Jen, Jon Maloney wrap-up, Nine follow-up), 6+ signals across 5+ sessions total.
+- H31 bumped 50% → 70% — Will's own SOW reply to Jen was ~65 words, "deliberate starter" framing. 2nd short-leadership-email signal.
+- Heavy MC UI iteration day: 6+ UX brain dumps in <10h (card width, title wrapping, dropdown clipping, layout restructure, etc.). Product-ownership mode active — MC is daily-driver now.
+- New professional context: Jon Maloney (CTO/CPO Vision Intelligence — AU video security, LLM clip triage engagement, budget exhausted, wrap-up + return new year); Jen at legalsuper (Phase 0 complete, Phase 1 $100k at 36% GP, John + Luke context).
+- → Updates applied 2026-04-21
 
 ### 2026-04-17: SkyMeet Architecture Deep-Dive
 - 7-round collaborative architecture exploration for "sending AI agents to meetings" — Will fully in thinking-partner mode throughout (H27 strongest signal yet)
@@ -402,13 +419,8 @@
 - Source: 2026-04-06 LinkedIn post + 2026-04-14 Cochlear client email — both had em-dashes changed to hyphens
 - Promoted at 95% confidence — 2 data points across 2 different contexts (social + client email) confirms universal preference
 
-### H26: Will expects Sky to proactively route AiD business and client-facing work to aid-coo
-- Source: 2026-04-14 — "this task should of been iterated with AID COO" after Sky handled internal cost rate calculation directly instead of delegating
-- Confidence: 75% | Status: Testing — close to promotion (3+ sessions, clear scope expansion)
-- Scope (expanded 2026-04-18): (a) AiD team data (salaries, rates, team structure, internal pricing), (b) client-facing drafts and comms (emails, case studies, nudges for Alceon/Bound/ex-QBE contacts)
-- 2026-04-16 signal (mixed): Client-facing AiD emails (Sze, Dave Sherman, Brenton Crab) routed to aid-coo as expected. But the existing "Send Anurag internal cost" rate task continued in the worker (not migrated to aid-coo mid-task). Start new AiD tasks in aid-coo; mid-task migration not expected.
-- 2026-04-18 signal (strong): Two back-to-back explicit instructions — "let's get and draft the GenLife case study with aid-coo. He might have the context. If not, I could send some context" and "draft the nudge for Sze using aid coo". Both client-facing, both explicitly routed to aid-coo. Also shows Will's context-offer pattern — offers to send context if aid-coo lacks it.
-- Validate: 1 more confirming signal on a NEW AiD task routed correctly from the start → promote to belief.
+### H26: PROMOTED → Behavioral Patterns: "Routes AiD + Client-Facing Work to aid-coo" (2026-04-21)
+- Promoted at 85% confidence — 3 clean signals same day (SOW/Jen, Jon Maloney wrap-up, Nine follow-up), 6+ signals across 5+ sessions total.
 
 ### H27: Will signals thinking-partner mode with explicit phrases; expects Sky to reason through the decision WITH him, not just for him
 - Source: 2026-04-16 — "Abitnweird isn't it. Help me think through it slightly..." and "I wonder is it worthwhile mentioning... Or does that diminish the value?"
@@ -439,10 +451,36 @@
 
 ### H31: Short emails are a leadership signal for Will — brevity projects authority in written comms
 - Source: 2026-04-19 San/LIRS email drafting — "It's too long. Long emails make me look not leadership. 3 and 4 should just be inferred. Don't need to over explain some bits."
-- Confidence: 50% | Status: Testing (1 explicit observation, but strongly worded)
-- Implication: for client/partner/exec email drafts, target shorter than default. Trust that obvious implications will be inferred; don't spell out next steps. "Strength but not ego" — firm position without over-explaining or being transactional.
+- 2nd signal (2026-04-21): Will's own SOW reply to Jen/legalsuper — ~65 words, "deliberate starter" frame, no em-dashes, contextual "good luck with Luke" before close. Firm Phase 0 defence in under 70 words.
+- Confidence: 70% | Status: Testing (2 data points, same behavioural signature — close to promotion)
+- Implication: for client/partner/exec email drafts, target under ~80 words. Trust implications will be inferred. "Strength but not ego" — firm position without over-explaining.
 - Distinct from existing signal-to-noise value: this is specifically about perceived authority — short = senior voice in Will's mental model.
-- Validate: next 3 leadership/exec emails — does Will cut length even when content is correct? Promote to belief at 2+ confirming signals.
+- Validate: 1 more confirming signal → promote to belief. → Confidence updated [2026-04-21]
+
+### H32: Will prefers "X is a given" framing for AI adoption in content — treats AI as baseline, not contested
+- Source: 2026-04-21 LinkedIn post — "I don't think it's not where we automate. I think it's automation is a given." Will's final: "Agentic automation feels like a given now. Most conversations I'm in assume it's happening."
+- Confidence: 60% | Status: Testing (1 explicit observation, strongly worded, cross-references Opportunity > Warning belief H10)
+- Implication: don't litigate AI/automation adoption in posts. Position it as assumed baseline, then explore second-order questions (design, margin, human value, workflow change).
+- Validate: next 2 LinkedIn drafts about AI — does Will reject framing that positions AI adoption as contested/novel? Promote at 2+ signals.
+
+### H33: Concrete named-story anchors beat abstract/artistic examples in Will's LinkedIn voice
+- Source: 2026-04-21 LinkedIn post — rejected "artwork" example, replaced with Starbucks baristas story (staff cut → satisfaction dropped → rehired → handwritten name on cup). Earlier (2026-03-29) Gen Z / 14% stat pattern: "I really like this."
+- Confidence: 60% | Status: Testing (2 supporting data points — Starbucks + Gen Z stats)
+- Implication: prefer named companies, specific statistics, real events as anchor. Avoid "imagine X" / generic/artistic analogies.
+- Validate: next 2 LinkedIn drafts — swap abstract example for concrete story; does Will keep it?
+
+### H34: When drafts miss repeatedly, Will writes his own final and expects Sky to learn from it
+- Source: 2026-04-21 LinkedIn post (5 rounds, Will wrote final); 2026-04-21 SOW reply to Jen (Will wrote final after options); 2026-04-19 LIRS/San email (Will tweaked and added his own). Three back-to-back sessions.
+- Confidence: 75% | Status: Testing (3 observations across 3 days — close to promotion)
+- Pattern: Will's "Read it take what you need" instruction signals: this is the reference artefact, calibrate future drafts against it. Not a rejection — it's a teaching move.
+- Implication: when Sky receives a "here's the final version", treat it as a voice calibration signal and update journal with specific stylistic observations from the final. Don't just accept it — analyse it.
+- Validate: 1 more confirming signal → promote to belief. Will this also apply to non-LinkedIn contexts (slack messages, proposals)?
+
+### H35: Will expects accurate depiction of own systems and will correct architectural misrepresentations
+- Source: 2026-04-20/21 excalidraw diagram session — 3 corrections within one review: (a) "NAA is just one project amongst many", (b) "only MC spawns todo workers", (c) "skymeet and MC — is that the same box?" Will has precise mental model of own ecosystem.
+- Confidence: 55% | Status: Testing (1 session, 3 related corrections)
+- Implication: when diagramming or describing NanoClaw/MC/agent ecosystem, state Sky's understanding explicitly and ask for correction before producing the artefact. Get architecture vocabulary right (orchestrator = Sky; persisted/project agents = aid-coo, NAA; workers = MC-spawned task executors).
+- Validate: next ecosystem diagram or architecture writeup — does Will correct even minor misrepresentations?
 
 ---
 
@@ -459,3 +497,4 @@
 - **H20**: Will proactively identifies system hygiene gaps → Promoted to Behavioral Patterns: Proactive System Hygiene (80%)
 - **H25**: Will manages work through todo system → Promoted to Behavioral Patterns: Todo-First Workflow (85%)
 - **H18**: Will values documentation of decisions as first-class artifacts → Promoted to Behavioral Patterns: Documents Decisions as First-Class Artifacts (88%)
+- **H26**: Will expects Sky to route AiD business + client-facing work to aid-coo → Promoted to Behavioral Patterns: Routes AiD + Client-Facing Work to aid-coo (85%)
