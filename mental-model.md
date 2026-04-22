@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-21 (nightly observe)*
+*Last Updated: 2026-04-22 (nightly observe — low-signal day, no belief changes)*
 *Coverage: 2026-02-23 → present*
 
 ---
