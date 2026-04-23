@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-22 (nightly observe — low-signal day, no belief changes)*
+*Last Updated: 2026-04-23 (nightly observe — H34 promoted, H28 bumped, H36 added)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -212,6 +212,14 @@
 - Implication: when making architectural/strategic decisions, capture reasoning + tradeoffs + rejected options — not just the chosen path. Assume the next agent session won't have this conversation in context.
 - Promoted from H18 (2026-04-17) — 4 signals across 3 sessions
 
+### Learns by Reading Will's Final Version (Confidence: 80%)
+- When drafts miss the mark repeatedly — or when the piece matters — Will writes his own final and shares it back with "here is what I sent" / "read it take what you need" framing
+- 5 signals across 4 days: LIRS/San email (2026-04-19), LinkedIn post on agentic automation (2026-04-21), SOW reply to Jen/legalsuper (2026-04-21), Anurag AI Risk Navigator briefing (2026-04-22), Charlotte legalsuper email (2026-04-23)
+- Pattern: the shared final IS the calibration artefact. Not an acknowledgement, not a thank-you — a voice/structure reference for future drafts in the same class (LinkedIn voice, client email, internal-team email, strategic briefing).
+- Implication: when Will shares "this is the final version", analyse it line-by-line against the last Sky draft. Capture specific stylistic deltas (length, tone, pronoun choices, removed framing, added context) in the relevant journal entry. Don't just close the todo.
+- Scope: so far observed for LinkedIn posts, external client emails, internal-team emails, and strategic briefings. Expect to also apply to proposals and slack/exec messages.
+- Promoted from H34 (2026-04-23) — 5 signals across 4 days, stable signature.
+
 ### Routes AiD + Client-Facing Work to aid-coo (Confidence: 85%)
 - Will consistently routes AiD internal business work AND client-facing drafts/emails to aid-coo from the start, not Sky directly
 - 6+ signals across 5+ sessions: 2026-04-14 explicit correction ("this task should of been iterated with AID COO"), 2026-04-16 client emails (Sze/Alceon, Sherman/Bound, Crab/ex-QBE), 2026-04-18 GenLife case study + Sze nudge, 2026-04-21 SOW reply to Jen/legalsuper + Jon Maloney wrap-up + Nine follow-up (3 signals same day)
@@ -231,6 +239,15 @@
 ## Recent Learning Events
 
 *(Top 8 — rotate as new ones accumulate)*
+
+### 2026-04-23: Alceon Agent Bootstrap + Foundry Skills Architecture + H34 Promoted
+- New Alceon project agent created (09:43 UTC) with explicit "seed it with aid-coo scene knowledge" bootstrap intent. Followed immediately (09:47 UTC) by first architecture ideation todo on it — agents created for immediate use, not speculative infra.
+- Foundry architecture arc: full Exploration → literal reference probe ("Can I use actual SKILL.md files… just on foundry?") → approval ("I like this Skills + Agent based pattern") → implementation ask (excalidraw). H28 strongest-form-yet signal: literal-artefact port, not conceptual analogue. H28 bumped 65% → 75%.
+- **H34 promoted**: "Learns by Reading Will's Final Version" at 80%. Today's 2 signals (Anurag AI Risk Navigator briefing final email + Charlotte/legalsuper final email) close the set at 5 observations across 4 days.
+- AI Risk Navigator briefing ran 4 rounds through aid-coo with model-1/2/3 + 60/20/20 revenue mix specificity; final email cc'd DK, led with "model 1 first" commercial positioning. Confirms thinking-partner mode extends to aid-coo level (H27 signal).
+- Charlotte email: 3-round iteration through aid-coo. "Legalsuper = one word, no capitals" factual correction + "too emotive — Charlotte is a team member" tone correction. New H36 added at 50%: tone calibrated by relationship type (team member vs external client).
+- Global wiki promotion skill discussion (Telegram): Will reasoned from Option A → Option B with explicit scalability/agent-cognitive-load argument. Reinforces Incremental Over Big-Bang + Proactive System Hygiene beliefs.
+- Specialised-agent Telegram Q&A: Will accepted Sky's "no need to split aid-coo" answer; pivoted to the real problem (global wiki → agent knowledge layer). Classic Scope Exploration Pattern.
 
 ### 2026-04-21: Knowledge Architecture Diagram + LinkedIn Voice Refinement + aid-coo Routing Promoted
 - Excalidraw architecture diagram commissioned to explain NanoClaw ecosystem. Will corrected Sky's rendering multiple times with precise architectural detail: "NAA is just one project amongst many. We have main orchestrator (Sky), specialised project/domain agents (aid-coo, NAA), worker to-do agents." Also: "only MC spawns todo workers" → H35 added (architecture precision).
@@ -433,9 +450,11 @@
 
 ### H28: When Will names an existing tool as reference ("similar to how X works"), that becomes the definitive UX spec
 - Source: 2026-04-17 — "Similar to how granola works, you can ask it questions during the meeting and also it transcribes" pivoted SkyMeet architecture from participant-bot to sidecar
-- Confidence: 65% | Status: Testing (1 strong data point — the pivot was significant)
-- Implication: when Will anchors to an existing tool, stop proposing alternative UX patterns and design toward matching the reference
-- Validate: next tool-replacement/build conversation — does Will name a predecessor, and is that the spec?
+- 2nd signal (2026-04-23): "Create me a new project agent called Alceon Agent. Similar in structure to NAA agent" — direct reference-to-pattern for bootstrapping Alceon.
+- 3rd signal (2026-04-23): "Replicate how you use Claude skills on AI Foundry" → "Can I use actual SKILL.md files in the same way Claude uses those Skills? But just on foundry?" — strongest form yet: literal-artefact port, not just conceptual analogue.
+- Confidence: 75% | Status: Testing (3 data points, close to promotion)
+- Implication: when Will anchors to an existing tool/pattern, design toward matching the reference as literally as possible. Ask whether the actual artefact (file, schema, skill) can be ported before proposing a rewrite.
+- Validate: 1 more confirming signal → promote to belief. → Confidence updated [2026-04-23]
 
 ### H29: Will rejects abstraction layers built for speculative future scenarios
 - Source: 2026-04-17 — rejected proposed `TranscriptionProvider` interface + `FasterWhisperProvider` stub "for later" — "don't worry about whisper. We don't need the local transcription option either."
@@ -469,12 +488,15 @@
 - Implication: prefer named companies, specific statistics, real events as anchor. Avoid "imagine X" / generic/artistic analogies.
 - Validate: next 2 LinkedIn drafts — swap abstract example for concrete story; does Will keep it?
 
-### H34: When drafts miss repeatedly, Will writes his own final and expects Sky to learn from it
-- Source: 2026-04-21 LinkedIn post (5 rounds, Will wrote final); 2026-04-21 SOW reply to Jen (Will wrote final after options); 2026-04-19 LIRS/San email (Will tweaked and added his own). Three back-to-back sessions.
-- Confidence: 75% | Status: Testing (3 observations across 3 days — close to promotion)
-- Pattern: Will's "Read it take what you need" instruction signals: this is the reference artefact, calibrate future drafts against it. Not a rejection — it's a teaching move.
-- Implication: when Sky receives a "here's the final version", treat it as a voice calibration signal and update journal with specific stylistic observations from the final. Don't just accept it — analyse it.
-- Validate: 1 more confirming signal → promote to belief. Will this also apply to non-LinkedIn contexts (slack messages, proposals)?
+### H34: PROMOTED → Behavioral Patterns: "Learns by Reading Will's Final Version" (2026-04-23)
+- Promoted at 80% confidence — 5 signals across 4 days (LIRS/San 2026-04-19, LinkedIn 2026-04-21, SOW/Jen 2026-04-21, Anurag briefing 2026-04-22, Charlotte email 2026-04-23). Scope confirmed across LinkedIn voice, external client emails, internal-team emails, and strategic briefings.
+
+### H36: Tone calibrated by relationship type — team members / internal partners get peer tone, not client-pitch emotive voice
+- Source: 2026-04-23 Charlotte/legalsuper email — "The language is still too emotive in the email. Charlotte is effectively a member of the team. My edge read [team] is a member of the team... I need to have more appropriate [tone] to the team members."
+- Confidence: 50% | Status: Testing (1 explicit correction)
+- Distinct from H31 (short-email-as-leadership-signal). H31 is about length/brevity for seniority projection; H36 is about register (peer vs warm-client). They can stack: internal-team emails → short AND peer-register.
+- Implication: before drafting an email, classify the recipient: (a) external client/prospect → warmer, slight formality; (b) internal team / partner consultants (edge red, aid team, collaborators) → peer register, direct, minimal emotive framing, no pitch-cadence.
+- Validate: next peer/internal draft Sky produces — does Will correct tone again if Sky defaults to client-warm voice?
 
 ### H35: Will expects accurate depiction of own systems and will correct architectural misrepresentations
 - Source: 2026-04-20/21 excalidraw diagram session — 3 corrections within one review: (a) "NAA is just one project amongst many", (b) "only MC spawns todo workers", (c) "skymeet and MC — is that the same box?" Will has precise mental model of own ecosystem.
@@ -498,3 +520,4 @@
 - **H25**: Will manages work through todo system → Promoted to Behavioral Patterns: Todo-First Workflow (85%)
 - **H18**: Will values documentation of decisions as first-class artifacts → Promoted to Behavioral Patterns: Documents Decisions as First-Class Artifacts (88%)
 - **H26**: Will expects Sky to route AiD business + client-facing work to aid-coo → Promoted to Behavioral Patterns: Routes AiD + Client-Facing Work to aid-coo (85%)
+- **H34**: Will writes own finals when drafts miss → Promoted to Behavioral Patterns: Learns by Reading Will's Final Version (80%)
