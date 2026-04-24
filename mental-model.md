@@ -1,6 +1,6 @@
 # Mental Model
 
-*Last Updated: 2026-04-23 (nightly observe — H34 promoted, H28 bumped, H36 added)*
+*Last Updated: 2026-04-24 (nightly observe — H22 bumped 75→80%, H29 bumped 70→75%, H37 added)*
 *Coverage: 2026-02-23 → present*
 
 ---
@@ -240,6 +240,14 @@
 
 *(Top 8 — rotate as new ones accumulate)*
 
+### 2026-04-24: Wiki-Promote Approval + H22/H29 Bumped + H37 Added
+- Thin 24h window (only 2 substantive Will messages on Telegram + 3 MC feedback nudges). High-signal-per-message.
+- **Wiki-promote cron approved**: Will explicitly self-corrected A→B with full mechanism restatement ("You're right, I was wrong. Option A's cost compounds... Context grows forever."), then terse implementation green-light ("Yes schedule the cron"). Clean Exploration → Summary/Confirmation → Implementation arc.
+- **H22 bumped** 75% → 80%: "Write paths stay clean: Sky owns global wiki, each specialist owns its own log." = 3rd security/ownership-boundary signal. Promotion-ready.
+- **H29 bumped** 70% → 75%: "One future optimisation (not now)" deferral language = 2nd explicit YAGNI data point pairing with 2026-04-17 Whisper stub rejection.
+- **New H37 (50%)**: Will transparently concedes position-changes when agent reasoning holds up — restates counter-argument in his own words before approving. Distinct from Accuracy Over Speed; this is about publicly crediting the correction.
+- Foundry architecture Round 2 feedback (Alceon): Will asked for more detail + verification that design is appropriate, with named components (MS Agent Skill SDK, Foundry Agent Service, skill-retrieval mechanism). Reinforces H35 + Accuracy Over Speed.
+
 ### 2026-04-23: Alceon Agent Bootstrap + Foundry Skills Architecture + H34 Promoted
 - New Alceon project agent created (09:43 UTC) with explicit "seed it with aid-coo scene knowledge" bootstrap intent. Followed immediately (09:47 UTC) by first architecture ideation todo on it — agents created for immediate use, not speculative infra.
 - Foundry architecture arc: full Exploration → literal reference probe ("Can I use actual SKILL.md files… just on foundry?") → approval ("I like this Skills + Agent based pattern") → implementation ask (excalidraw). H28 strongest-form-yet signal: literal-artefact port, not conceptual analogue. H28 bumped 65% → 75%.
@@ -412,8 +420,9 @@
 ### H22: Will is security-conscious about architecture and secrets even in trusted/familiar contexts
 - Source: 2026-04-05 — questioned PAT-in-file approach explicitly after setting it up: "Is that a secure way to store secrets? Is that how it's done in nanoclaw?"
 - 2nd signal (2026-04-15): SharePoint access question — "I've consciously made this implementation very separated for security purposes. Should there be like an integration layer externalised?"
-- Confidence: 75% | Status: Testing (2 data points)
-- Validate: next secrets/credential or architecture separation discussion
+- 3rd signal (2026-04-24): wiki-promote design — "Write paths stay clean: Sky owns global wiki, each specialist owns its own log." Explicit ownership-boundary framing at design time, proactively isolating write paths.
+- Confidence: 80% | Status: Testing (3 data points — close to promotion)
+- Validate: 1 more signal on separation/ownership framing → promote to Behavioral Patterns. → Confidence updated [2026-04-24]
 
 ### H24: Will routes system/architecture implementation to Claude Code / host AI, not Sky
 - Source: 2026-04-08 — after correcting agent type, asked "give me the instructions so I can tell Claude code to implement it"
@@ -458,9 +467,10 @@
 
 ### H29: Will rejects abstraction layers built for speculative future scenarios
 - Source: 2026-04-17 — rejected proposed `TranscriptionProvider` interface + `FasterWhisperProvider` stub "for later" — "don't worry about whisper. We don't need the local transcription option either."
-- Confidence: 70% | Status: Testing (1 explicit cut today, pairs with earlier Scope Exploration Pattern signals)
-- Implication: build the concrete path. Don't add optionality, interfaces, or stubs for hypothetical future needs Will hasn't asked for. Let YAGNI win.
-- Validate: next architecture proposal with abstraction layers — does Will cut them?
+- 2nd signal (2026-04-24): wiki-promote design — Will explicitly boxed host-mount optimisation as "One future optimisation (not now)" while approving the simpler delegation model. Acknowledges the optimisation exists, defers it, builds the concrete path.
+- Confidence: 75% | Status: Testing (2 data points — nearing promotion)
+- Implication: build the concrete path. Don't add optionality, interfaces, or stubs for hypothetical future needs Will hasn't asked for. Let YAGNI win. When there IS a future optimisation worth noting, call it out explicitly as deferred — don't silently implement it early.
+- Validate: 1 more confirming signal → promote to belief. → Confidence updated [2026-04-24]
 
 ### H30: Long worker-todo result_content threads become unreadable; Will loses the plot after several rounds
 - Source: 2026-04-18 — two adjacent worker-todo feedback messages on the SkyMeet build todos: "I don't really understand the details anymore. Just tell me is there anything left to do on this Todo?" and "What do I do now?"
@@ -497,6 +507,13 @@
 - Distinct from H31 (short-email-as-leadership-signal). H31 is about length/brevity for seniority projection; H36 is about register (peer vs warm-client). They can stack: internal-team emails → short AND peer-register.
 - Implication: before drafting an email, classify the recipient: (a) external client/prospect → warmer, slight formality; (b) internal team / partner consultants (edge red, aid team, collaborators) → peer register, direct, minimal emotive framing, no pitch-cadence.
 - Validate: next peer/internal draft Sky produces — does Will correct tone again if Sky defaults to client-warm voice?
+
+### H37: Will transparently concedes position-changes, restating the counter-argument in his own words
+- Source: 2026-04-24 Telegram — after Sky argued Option B over A for wiki-promote: "You're right, I was wrong. Option A's cost compounds: every run Sky has to read all project logs + global log, diff them, decide what's new. Context grows forever." Will doesn't just pivot — he explicitly credits the correction and restates the mechanism.
+- Confidence: 50% | Status: Testing (1 explicit observation)
+- Distinct from Accuracy Over Speed (which governs verification before asserting). H37 is about publicly acknowledging when *his own* position updates based on agent reasoning — a thinking-partner collaboration signal, not a values signal.
+- Implication: when Sky has genuine counter-argument with reasoning, voice it. Will is receptive and will update position explicitly, not quietly. Don't over-hedge.
+- Validate: next strong counter-argument from Sky on a strategic/architectural decision — does Will use similar concession language, or just pivot without comment? 2+ signals → graduate to 70%.
 
 ### H35: Will expects accurate depiction of own systems and will correct architectural misrepresentations
 - Source: 2026-04-20/21 excalidraw diagram session — 3 corrections within one review: (a) "NAA is just one project amongst many", (b) "only MC spawns todo workers", (c) "skymeet and MC — is that the same box?" Will has precise mental model of own ecosystem.
